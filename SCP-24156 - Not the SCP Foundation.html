@@ -1,0 +1,3850 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+		<link rel="icon" type="image/x-icon" href="https://scp-wiki.wikidot.com/assets/favicon.ico">
+		
+		
+		<link rel="preload" as="image" href="https://scp-wiki.wikidot.com/assets/btn-minecraft-hover.png">
+		
+    <script type="text/javascript" async="" src="http://edge.quantserve.com/quant.js"></script><script type="text/javascript" async="" src="http://stats.g.doubleclick.net/dc.js"></script><script async="" type="text/javascript" src="file://c.amazon-adsystem.com/aax2/apstag.js"></script><script async="" type="text/javascript" src="file://c.amazon-adsystem.com/aax2/apstag.js"></script></head>
+	
+	
+	
+    
+    
+<body id="html-body">
+
+    <title>SCP-24156 - Not the SCP Foundation</title>
+    
+    
+    
+    
+    
+    
+    
+
+
+    
+        
+    
+    
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                            
+    
+    
+    
+    
+    <meta http-equiv="content-language" content="en">
+    
+        
+    
+    <style type="text/css" id="internal-style">
+        
+        /* modules */
+@import url(https://d3g0gp89917ko0.cloudfront.net/v--291054f06006/common--modules/css/pagerate/PageRateWidgetModule.css);
+
+
+        
+                
+        /* theme */
+                    @import url(https://d3g0gp89917ko0.cloudfront.net/v--291054f06006/common--theme/base/css/style.css);
+                    @import url(https://scp-wiki.wdfiles.com/local--code/component%3Atheme/1);
+            :root {
+    --timeScale: 1;
+    --timeDelay: 0s;
+}
+ 
+/* Converting middle divider from box-shadow to ::before pseudo-element */
+.anom-bar > .bottom-box { box-shadow: none!important; }
+.anom-bar > .bottom-box::before {
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 0.5rem;
+    background-color: rgb(var(--swatch-menubg-black-color, 12, 12, 12));
+    transform: translateY(-0.74rem);
+}
+ 
+/* DIVIDER */
+.anom-bar > .bottom-box::before {
+    animation-name: divider;
+    animation-duration: calc(0.74s * var(--timeScale));
+    animation-delay: calc(0.1s * var(--timeScale) + var(--timeDelay));
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(.32,.38,.39,.94);
+    animation-fill-mode: backwards;
+}
+ 
+/* CLASSIFIED LEVEL BARS */
+div.top-center-box  > * {
+    animation-name: bar;
+    animation-duration: calc(0.45s * var(--timeScale));
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+}
+div.top-center-box > :nth-child(1) { animation-delay: calc(0.2s * var(--timeScale) + var(--timeDelay)); }
+div.top-center-box > :nth-child(2) { animation-delay: calc(0.32s * var(--timeScale) + var(--timeDelay)); }
+div.top-center-box > :nth-child(3) { animation-delay: calc(0.45s * var(--timeScale) + var(--timeDelay)); }
+div.top-center-box > :nth-child(4) { animation-delay: calc(0.61s * var(--timeScale) + var(--timeDelay)); }
+div.top-center-box > :nth-child(5) { animation-delay: calc(0.75s * var(--timeScale) + var(--timeDelay)); }
+div.top-center-box > :nth-child(6) { animation-delay: calc(0.95s * var(--timeScale) + var(--timeDelay)); }
+ 
+/* TOP TEXT */
+div.top-left-box, div.top-right-box {
+    clip-path: polygon( 0% -50%, 150% -50%, 150% 100%, 0% 100%);
+}
+ 
+div.top-left-box > *, div.top-right-box > * {
+    position: relative;
+    animation-name: bottomup;
+    animation-duration: calc(0.65s * var(--timeScale));
+    animation-delay: calc(0.5s * var(--timeScale) + var(--timeDelay));
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+}
+ 
+/*-----------------------------------*/
+/*-----------------------------------*/
+ 
+/* CONTAINMENT, DISRUPTION, RISK CLASSES */
+div.text-part > * {
+    clip-path: polygon( 0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    animation-name: expand2;
+    animation-duration: calc(0.5s * var(--timeScale));
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(.12,.41,.27,.99);
+    animation-fill-mode: backwards;
+}
+div.text-part > :nth-child(1) {
+    animation-name: expand1;
+}
+div.text-part > :nth-child(1) { animation-delay: calc(0.6s * var(--timeScale) + var(--timeDelay)); }
+div.text-part > :nth-child(2) { animation-delay: calc(0.75s * var(--timeScale) + var(--timeDelay)); }
+div.text-part > :nth-child(3) { animation-delay: calc(0.86s * var(--timeScale) + var(--timeDelay)); }
+ 
+div.main-class::before, div.main-class::after {
+    animation-name: iconslide;
+    animation-duration: calc(0.45s * var(--timeScale));
+    animation-delay: calc(0.8s * var(--timeScale) + var(--timeDelay));
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(.12,.41,.27,.99);
+    animation-fill-mode: backwards;
+}
+ /* BOTTOM TEXT */
+div.main-class > *,  div.disrupt-class > *, div.risk-class > * {
+    white-space: nowrap;
+    animation-name: flowIn;
+    animation-duration: calc(0.42s * var(--timeScale));
+    animation-delay: calc(0.75s * var(--timeScale) + var(--timeDelay));
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+}
+ 
+/*-----------------------------------*/
+/*-----------------------------------*/
+ 
+/* DIAMOND */
+div.arrows {
+    animation-name: arrowspin;
+    animation-duration: calc(0.7s * var(--timeScale));
+    animation-delay: calc(0.6s * var(--timeScale) + var(--timeDelay));
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(.12,.41,.27,.99);
+    animation-fill-mode: backwards;
+}
+ 
+div.quadrants > * {
+    animation-name: fade;
+    animation-duration: calc(0.3s * var(--timeScale));
+    animation-delay: calc(1.4s * var(--timeScale) + var(--timeDelay));
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(.12,.41,.27,.99);
+    animation-fill-mode: backwards;
+}
+ 
+div.top-icon, div.right-icon, div.left-icon, div.bottom-icon {
+    animation-name: nodegrow;
+    animation-duration: calc(0.4s * var(--timeScale));
+    animation-delay: calc(1.4s * var(--timeScale) + var(--timeDelay));
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(.12,.41,.27,.99);
+    animation-fill-mode: backwards;
+}
+div.diamond-part {
+    clip-path: polygon( -10% 0.37%, 120% 0.37%, 120% 100%, -10% 100%);
+    animation-name: diamondBorder;
+    animation-duration: calc(0.8s * var(--timeScale));
+    animation-delay: calc(0.5s * var(--timeScale) + var(--timeDelay));
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(.32,.38,.39,.94);
+    animation-fill-mode: backwards;
+    will-change: box-shadow;
+}
+ 
+/* MOBILE QUERY */
+@media (max-width: 480px ) {
+    .anom-bar > .bottom-box::before {
+        display:none;
+    }
+    .anom-bar > .bottom-box {
+        box-shadow: 0 -0.5rem 0 0 rgb(var(--swatch-menubg-black-color, 12, 12, 12))!important;
+    }
+    div.top-center-box  > * {
+        animation-name: bar-mobile;
+        animation-duration: calc(0.9s * var(--timeScale));
+    }
+    div.top-center-box > :nth-child(1) { animation-delay: calc(0.1s * var(--timeScale) + var(--timeDelay)); }
+    div.top-center-box > :nth-child(2) { animation-delay: calc(0.2s * var(--timeScale) + var(--timeDelay)); }
+    div.top-center-box > :nth-child(3) { animation-delay: calc(0.3s * var(--timeScale) + var(--timeDelay)); }
+    div.top-center-box > :nth-child(4) { animation-delay: calc(0.4s * var(--timeScale) + var(--timeDelay)); }
+    div.top-center-box > :nth-child(5) { animation-delay: calc(0.5s * var(--timeScale) + var(--timeDelay)); }
+    div.top-center-box > :nth-child(6) { animation-delay: calc(0.6s * var(--timeScale) + var(--timeDelay)); }
+ 
+}
+ 
+/*--- Motion Accessibility ---*/
+@media screen and (prefers-reduced-motion: reduce) { 
+    div.anom-bar-container { --timeScale: 0!important; }
+}
+ 
+/*-------------------------*/
+ 
+@keyframes divider {
+    from { max-width: 0%;  }
+    to { max-width: 100%; }
+}
+ 
+@keyframes bar {
+    from { max-width: 0%; }
+    to { max-width: 100%; }
+}
+@keyframes bar-mobile {
+    from { max-height: 0%; }
+    to { max-height: 100%; }
+}
+ 
+@keyframes bottomup {
+    from { top: 100px; }
+    to { top: 0; }
+}
+ 
+@keyframes expand1 {
+    from { opacity: 0; clip-path: inset(0 calc(100% - 0.75rem) 0 0); }
+    to { opacity: 1; clip-path: inset(0); }
+}
+@keyframes iconslide {
+    from { opacity: 0; transform: translateX(-5rem); }
+    to { opacity: 1; transform: translateX(0); }
+}
+ 
+@keyframes expand2 {
+    from { opacity: 0; width: 1%; }
+    to { opacity: 1; width: calc(100% - 0.25rem); }
+}
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+ 
+@keyframes flowIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+ 
+@keyframes arrowspin {
+    from { clip-path: circle(0%); transform: rotate(135deg); }
+    to { clip-path: circle(75%); transform: rotate(0deg); }
+}
+@keyframes nodegrow {
+    from { transform: scale(0);}
+    to {  transform: scale(1);}
+}
+@keyframes diamondBorder {
+    from { box-shadow: -0.5rem -20rem 0 0 rgb(var(--swatch-menubg-black-color, 12, 12, 12)); }
+    to { box-shadow: -0.5rem 0 0 0 rgb(var(--swatch-menubg-black-color, 12, 12, 12)); }
+}</style>
+    
+        
+        
+        
+    
+    
+    
+            
+        
+            
+        
+        
+            
+    
+        
+    
+    
+    
+        
+    
+    <script>
+        var OneSignal = window.OneSignal || [];
+        OneSignal.push(function() {
+          OneSignal.init({
+            appId: null,
+          });
+        });
+    </script>
+        
+<style>
+iframe.scpnet-interwiki-frame { height: 0; }
+</style>
+<style>
+@import url('https://cdn.jsdelivr.net/gh/Nu-SCPTheme/Black-Highlighter@gh-pages/fonts/inter.css');
+
+:root {
+    --five-color: 196,2,51;
+    --four-color: 255,109,0;
+    --three-color: 255,211,0;
+    --two-color: 0,135,189;
+    --one-color: 0,159,107;
+}
+
+#page-title,
+.meta-title {
+    display: none;
+}
+
+.anom-bar-container,
+.anom-bar-container * {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Inter, sans-serif;
+    font-family: var(--title-font, Inter, sans-serif);
+}
+
+.anom-bar-container {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+}
+
+.anom-bar {
+    display: -ms-grid;
+    display: grid;
+            grid-template-areas:
+        "top-box"
+        "bottom-box";
+    width: 100%;
+}
+
+.anom-bar > .top-box {
+    --wght: 600;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    display: -ms-grid;
+    display: grid;
+    grid-area: top-box;
+    grid-template-areas:
+        "top-left-box top-center-box top-right-box";
+    width: 100%;
+        -ms-grid-columns: auto 1fr calc(5vw + 5rem);
+    grid-template-columns: auto 1fr -webkit-calc(5vw + 5rem);
+    grid-template-columns: auto 1fr -moz-calc(5vw + 5rem);
+    grid-template-columns: auto 1fr calc(5vw + 5rem);
+    -ms-grid-rows: 1fr;
+    grid-template-rows: 1fr;
+    font-weight: 600;
+    text-transform: uppercase;
+    justify-items: stretch;
+    padding-bottom: 1rem;
+}
+
+.top-box .top-left-box {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: top-left-box;
+}
+
+.top-left-box > .item {
+    font-size: -webkit-calc(12px + (20 - 12) * ( (100vw - 300px) / ( 1920 - 960) ));
+    font-size: -moz-calc(12px + (20 - 12) * ( (100vw - 300px) / ( 1920 - 960) ));
+    font-size: calc(12px + (20 - 12) * ( (100vw - 300px) / ( 1920 - 960) ));
+}
+
+.top-left-box > .number {
+    font-size: -webkit-calc(25px + (50 - 25) * ( (100vw - 300px) / ( 1920 - 300) ));
+    font-size: -moz-calc(25px + (50 - 25) * ( (100vw - 300px) / ( 1920 - 300) ));
+    font-size: calc(25px + (50 - 25) * ( (100vw - 300px) / ( 1920 - 300) ));
+}
+
+.top-box .top-center-box {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    grid-area: top-center-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100%;
+    margin: 0 1rem;
+}
+
+.top-center-box > div {
+    background-color: rgb(0,0,0);
+    height: 0.5rem;
+    width: 100%;
+    margin: 0.125rem;
+    display: none;
+}
+
+.anom-bar-container.american .top-center-box > div {
+    background-image: 
+    -webkit-repeating-linear-gradient(65deg, 
+        rgb(178,34,52),
+        rgb(252,252,252) 45%,
+        rgb(252,252,252) 55%,
+        rgb(60,59,110) 100%);
+    background-image: 
+    -moz-repeating-linear-gradient(65deg, 
+        rgb(178,34,52),
+        rgb(252,252,252) 45%,
+        rgb(252,252,252) 55%,
+        rgb(60,59,110) 100%);
+    background-image: 
+    -o-repeating-linear-gradient(65deg, 
+        rgb(178,34,52),
+        rgb(252,252,252) 45%,
+        rgb(252,252,252) 55%,
+        rgb(60,59,110) 100%);
+    background-image: 
+    repeating-linear-gradient(25deg, 
+        rgb(178,34,52),
+        rgb(252,252,252) 45%,
+        rgb(252,252,252) 55%,
+        rgb(60,59,110) 100%);
+    background-attachment: scroll;
+}
+
+.anom-bar-container.clear-1 .top-center-box > div {
+    background-color: rgb(0,159,107);
+    background-color: rgb(var(--one-color));
+}
+
+.anom-bar-container.clear-2 .top-center-box > div {
+    background-color: rgb(0,135,189);
+    background-color: rgb(var(--two-color));
+}
+
+.anom-bar-container.clear-3 .top-center-box > div {
+    background-color: rgb(255,211,0);
+    background-color: rgb(var(--three-color));
+}
+
+.anom-bar-container.clear-4 .top-center-box > div {
+    background-color: rgb(255,109,0);
+    background-color: rgb(var(--four-color));
+}
+
+.anom-bar-container.clear-5 .top-center-box > div {
+    background-color: rgb(196,2,51);
+    background-color: rgb(var(--five-color));
+}
+
+.anom-bar-container.clear-1 .top-center-box > .bar-one,
+.anom-bar-container.clear-2 .top-center-box > .bar-one,
+.anom-bar-container.clear-3 .top-center-box > .bar-one,
+.anom-bar-container.clear-4 .top-center-box > .bar-one,
+.anom-bar-container.clear-5 .top-center-box > .bar-one,
+.anom-bar-container.clear-6 .top-center-box > .bar-one {
+    display: block;
+}
+
+.anom-bar-container.clear-2 .top-center-box > .bar-two,
+.anom-bar-container.clear-3 .top-center-box > .bar-two,
+.anom-bar-container.clear-4 .top-center-box > .bar-two,
+.anom-bar-container.clear-5 .top-center-box > .bar-two,
+.anom-bar-container.clear-6 .top-center-box > .bar-two {
+    display: block;
+}
+
+.anom-bar-container.clear-3 .top-center-box > .bar-three,
+.anom-bar-container.clear-4 .top-center-box > .bar-three,
+.anom-bar-container.clear-5 .top-center-box > .bar-three,
+.anom-bar-container.clear-6 .top-center-box > .bar-three {
+    display: block;
+}
+
+.anom-bar-container.clear-4 .top-center-box > .bar-four,
+.anom-bar-container.clear-5 .top-center-box > .bar-four,
+.anom-bar-container.clear-6 .top-center-box > .bar-four {
+    display: block;
+}
+
+.anom-bar-container.clear-5 .top-center-box > .bar-five,
+.anom-bar-container.clear-6 .top-center-box > .bar-five {
+    display: block;
+}
+
+.anom-bar-container.clear-6 .top-center-box > .bar-six {
+    display: block;
+}
+
+.anom-bar-container.clear-6 .anom-bar > .top-box {
+    -ms-grid-columns: auto 1fr calc(5vw + 8rem);
+    grid-template-columns: auto 1fr -webkit-calc(5vw + 8rem);
+    grid-template-columns: auto 1fr -moz-calc(5vw + 8rem);
+    grid-template-columns: auto 1fr calc(5vw + 8rem);
+    padding-bottom: 1.15em;
+}
+
+.anom-bar-container.clear-6 .top-center-box > div {
+    background-color: rgb(133, 0, 5);
+    background-color: rgb(var(--swatch-primary, 133, 0, 5));
+    background-image: url("https://scp-wiki.wdfiles.com/local--files/component%3Aanomaly-class-bar/galactic.jpg");
+    background-attachment: fixed;
+    background-size: contain;
+    background-blend-mode: overlay;
+}
+
+.top-box .top-right-box {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    display: -ms-grid;
+    display: grid;
+    grid-area: top-right-box;
+            grid-template-areas:
+        "level"
+        "clearance";
+    -ms-grid-rows: (1fr)[2];
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 0.5em;
+    gap: 0.5em;
+}
+
+.top-right-box > .level {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+       -moz-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    grid-area: level;
+    font-size: 2.5em;
+    line-height: 0.5;
+}
+
+.top-right-box > .clearance {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+       -moz-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    grid-area: clearance;
+    font-size: -webkit-calc(12px + (15 - 12) * ( (100vw - 400px) / ( 1920 - 960) ));
+    font-size: -moz-calc(12px + (15 - 12) * ( (100vw - 400px) / ( 1920 - 960) ));
+    font-size: calc(12px + (15 - 12) * ( (100vw - 400px) / ( 1920 - 960) ));
+    line-height: 1.5;
+    white-space: nowrap;
+}
+
+.top-right-box > .clearance::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.anom-bar-container.clear-6 .top-right-box > .clearance::before {
+    content: "Cosmic Top-Secret";
+}
+
+.anom-bar-container.clear-5 .top-right-box > .clearance::before {
+    content: "Top-Secret";
+}
+
+.anom-bar-container.clear-4 .top-right-box > .clearance::before {
+    content: "Secret";
+}
+
+.anom-bar-container.clear-3 .top-right-box > .clearance::before {
+    content: "Confidential";
+}
+
+.anom-bar-container.clear-2 .top-right-box > .clearance::before {
+    content: "Restricted";
+}
+
+.anom-bar-container.clear-1 .top-right-box > .clearance::before {
+    content: "Unrestricted";
+}
+
+.anom-bar > .bottom-box {
+    --wght: 600;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    display: -ms-grid;
+    display: grid;
+    grid-area: bottom-box;
+            grid-template-areas:
+        "text-part diamond-part"
+        "text-part diamond-part";
+    -ms-grid-rows: 1fr 0.5rem 1fr;
+    grid-template-rows: 1fr 1fr;
+    -ms-grid-columns: 1fr 0.5rem 6rem;
+    grid-template-columns: 1fr 6rem;
+    grid-gap: 0.5rem;
+    width: 100%; 
+    height: 6rem;
+    font-weight: 600;
+    -webkit-box-shadow: 0 -0.5rem 0 0 rgb(12, 12, 12);
+       -moz-box-shadow: 0 -0.5rem 0 0 rgb(12, 12, 12);
+            box-shadow: 0 -0.5rem 0 0 rgb(12, 12, 12);
+    -webkit-box-shadow: 0 -0.5rem 0 0 rgb(var(--swatch-menubg-black-color, 12, 12, 12));
+       -moz-box-shadow: 0 -0.5rem 0 0 rgb(var(--swatch-menubg-black-color, 12, 12, 12));
+            box-shadow: 0 -0.5rem 0 0 rgb(var(--swatch-menubg-black-color, 12, 12, 12));
+    margin-top: -0.5rem;
+    padding-top: 0.25rem;
+}
+
+.bottom-box > .text-part {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+    display: -ms-grid;
+    display: grid;
+    height: 6rem;
+    grid-area: text-part;
+            grid-template-areas:
+        "main-class disrupt-class"
+        "main-class risk-class";
+    -ms-grid-rows: 1fr 0.25rem 1fr;
+    grid-template-rows: 1fr 1fr;
+    -ms-grid-columns: auto 0.25rem 1fr;
+    grid-template-columns: 3fr 2fr;
+    grid-gap: 0.25rem;
+    text-transform: uppercase;
+    -webkit-box-pack: stretch;
+    -webkit-justify-content: stretch;
+       -moz-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+       -moz-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+}
+
+.text-part div {
+    padding: 0 0.125rem;
+    margin: 0 0 0 0.25rem;
+    position: relative;
+}
+
+.text-part > .main-class {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+    position: relative;
+    grid-area: main-class;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-shadow: 0.25rem 0 0 0 rgba(0,0,0,0);
+       -moz-box-shadow: 0.25rem 0 0 0 rgba(0,0,0,0);
+            box-shadow: 0.25rem 0 0 0 rgba(0,0,0,0);
+}
+
+.anom-bar-container:not(.esoteric) .text-part > .main-class {
+    padding-right: 3.5rem;
+}
+
+.anom-bar-container.esoteric .text-part > .main-class {
+    padding-right: 2rem;
+}
+
+.text-part > .main-class::before {
+    content: "";
+    position: absolute;
+    top: -webkit-calc(50% - 2.25rem);
+    top: -moz-calc(50% - 2.25rem);
+    top: calc(50% - 2.25rem);
+    right: 0.5rem;
+    width: 3.53125rem;
+    height: 3.53125rem;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
+    border: 0.25rem solid rgb(12, 12, 12);
+    border: 0.25rem solid rgb(var(--swatch-menutxt-dark-color, 12, 12, 12));
+    background-color: rgb(252, 252, 252);
+    background-color: rgb(var(--swatch-background    , 252, 252, 252));
+    -webkit-background-size: contain;
+       -moz-background-size: contain;
+         -o-background-size: contain;
+            background-size: contain;
+    background-position: center center;
+}
+
+.anom-bar-container.esoteric .text-part > .main-class::before {
+    top: 0.5rem;
+    right: 1.25rem;
+    width: 5rem;
+    -webkit-border-radius: -webkit-calc(3.53125rem / 2);
+       -moz-border-radius: -moz-calc(3.53125rem / 2);
+            border-radius: calc(3.53125rem / 2);
+    background-color: rgb(252, 252, 252);
+    background-color: rgb(var(--swatch-background, 252, 252, 252));
+    border-color: rgb(var(--swatch-background, 252, 252, 252));
+    -webkit-filter: invert(1);
+            filter: invert(1);
+    background-image: url("https://scp-wiki.wikidot.com/local--files/component:anomaly-class-bar/esoteric-icon.svg");
+    -webkit-background-size: 75% 75%;
+       -moz-background-size: 75% 75%;
+         -o-background-size: 75% 75%;
+            background-size: 75% 75%;
+    background-repeat: no-repeat;
+    background-position: left -10px center;
+}
+
+.anom-bar-container.esoteric .text-part > .main-class::after {
+    content: "";
+    position: absolute;
+    top: 0.5rem;
+    right: 0.25rem;
+    width: 3.53125rem;
+    height: 3.53125rem;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
+    border: 0.25rem solid rgb(12, 12, 12);
+    border: 0.25rem solid rgb(var(--swatch-menutxt-dark-color, 12, 12, 12));
+    background-color: rgb(252, 252, 252);
+    background-color: rgb(var(--swatch-background, 252, 252, 252));
+    -webkit-background-size: contain;
+       -moz-background-size: contain;
+         -o-background-size: contain;
+            background-size: contain;
+    background-position: center center;
+}
+
+.anom-bar-container.none .text-part > .main-class::after {
+    background-image: url("{$secondary-icon}");
+}
+
+.anom-bar-container.explained .text-part > .main-class::before,
+.anom-bar-container.pending .text-part > .main-class::before,
+.anom-bar-container.neutralized .text-part > .main-class::before,
+.anom-bar-container.neutralised .text-part > .main-class::before {
+    display:none;
+}
+
+.anom-bar-container.keter .text-part > .main-class::before {
+    background-color: rgb(196,2,51);
+background-color: rgb(var(--five-color));
+    background-image: url("https://scp-wiki.wikidot.com/local--files/component:anomaly-class-bar/keter-icon.svg");
+}
+
+.anom-bar-container.euclid .text-part > .main-class::before {
+    background-color: rgb(255,211,0);
+background-color: rgb(var(--three-color));
+    background-image: url("https://scp-wiki.wikidot.com/local--files/component:anomaly-class-bar/euclid-icon.svg");
+}
+
+.anom-bar-container.safe .text-part > .main-class::before {
+    background-color: rgb(0,159,107);
+background-color: rgb(var(--one-color));
+    background-image: url("https://scp-wiki.wikidot.com/local--files/component:anomaly-class-bar/safe-icon.svg");
+}
+
+.text-part > .main-class > div {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.anom-bar-container.esoteric .text-part > .main-class > .second-class > .class-text {
+    font-size: -webkit-calc( 6px + (11 - 6) * ( (100vw - 400px) / ( 800 - 400) ));
+    font-size: -moz-calc( 6px + (11 - 6) * ( (100vw - 400px) / ( 800 - 400) ));
+    font-size: calc( 6px + (11 - 6) * ( (100vw - 400px) / ( 800 - 400) ));
+    position: relative;
+}
+
+.anom-bar-container:not(.esoteric) .text-part > .main-class > .contain-class > .class-text {
+    font-size: -webkit-calc(10px + (18 - 10) * ( (100vw - 400px) / ( 800 - 400) ));
+    font-size: -moz-calc(10px + (18 - 10) * ( (100vw - 400px) / ( 800 - 400) ));
+    font-size: calc(10px + (18 - 10) * ( (100vw - 400px) / ( 800 - 400) ));
+}
+
+.anom-bar-container:not(.esoteric) .text-part > .main-class > .second-class {
+    display: none;
+}
+
+.text-part > .disrupt-class {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: disrupt-class;
+}
+
+.text-part > .risk-class {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    grid-area: risk-class;
+}
+
+.text-part > .disrupt-class,
+.text-part > .risk-class {
+    overflow: hidden;
+}
+
+.anom-bar-container.esoteric .text-part .main-class {
+    background-color: rgba(66, 66, 72 ,0.15);
+    background-color: rgba(var(--swatch-menubg-dark-color, 66, 66, 72),0.15);
+    border-left: 0.75rem solid rgba(66, 66, 72 ,1);
+    border-left: 0.75rem solid rgba(var(--swatch-menubg-dark-color, 66, 66, 72),1);
+}
+
+.anom-bar-container.neutralized .text-part .main-class,
+.anom-bar-container.neutralised .text-part .main-class {
+    background-color: rgba(66, 66, 72 ,0.15);
+    background-color: rgba(var(--swatch-menubg-dark-color, 66, 66, 72),0.15);
+    border-left: 0.75rem solid rgba(66, 66, 72 ,1);
+    border-left: 0.75rem solid rgba(var(--swatch-menubg-dark-color, 66, 66, 72),1);
+}
+
+.anom-bar-container.pending .text-part .main-class {
+    background-color: rgba(12, 12, 12 ,0.15);
+    background-color: rgba(var(--swatch-menutxt-dark-color, 12, 12, 12),0.15);
+    border-left: 0.75rem solid rgba(12, 12, 12 ,1);
+    border-left: 0.75rem solid rgba(var(--swatch-menutxt-dark-color, 12, 12, 12),1);
+}
+
+.anom-bar-container.explained .text-part .main-class {
+    background-color: rgba(252, 252, 252 ,0.15);
+    background-color: rgba(var(--swatch-background, 252, 252, 252),0.15);
+    border-left: 0.75rem solid rgba(12, 12, 12 ,1);
+    border-left: 0.75rem solid rgba(var(--swatch-menutxt-dark-color, 12, 12, 12),1);
+}
+
+.anom-bar-container.keter .text-part .main-class,
+.anom-bar-container.amida .text-part .disrupt-class,
+.anom-bar-container.critical .text-part .risk-class {
+    background-color: rgba(196,2,51,0.15);
+    background-color: rgba(var(--five-color),0.15);
+    border-left: 0.5rem solid rgba(196,2,51,1);
+    border-left: 0.5rem solid rgba(var(--five-color),1);
+}
+
+.anom-bar-container.ekhi .text-part .disrupt-class,
+.anom-bar-container.danger .text-part .risk-class {
+    background-color: rgba(255,109,0,0.15);
+    background-color: rgba(var(--four-color),0.15);
+    border-left: 0.5rem solid rgba(255,109,0,1);
+    border-left: 0.5rem solid rgba(var(--four-color),1);
+}
+
+.anom-bar-container.euclid .text-part .main-class,
+.anom-bar-container.keneq .text-part .disrupt-class,
+.anom-bar-container.warning .text-part .risk-class {
+    border-left: 0.5rem solid rgba(255,211,0,1);
+    border-left: 0.5rem solid rgba(var(--three-color),1);
+    background-color: rgba(255,211,0,0.15);
+    background-color: rgba(var(--three-color),0.15);
+}
+
+.anom-bar-container.vlam .text-part .disrupt-class,
+.anom-bar-container.caution .text-part .risk-class {
+    border-left: 0.5rem solid rgba(0,135,189,1);
+    border-left: 0.5rem solid rgba(var(--two-color),1);
+    background-color: rgba(0,135,189,0.15);
+    background-color: rgba(var(--two-color),0.15);
+}
+
+.anom-bar-container.safe .text-part .main-class,
+.anom-bar-container.dark .text-part .disrupt-class,
+.anom-bar-container.notice .text-part .risk-class {
+    background-color: rgba(0,159,107,0.15);
+    background-color: rgba(var(--one-color),0.15);
+    border-left: 0.5rem solid rgba(0,159,107,1);
+    border-left: 0.5rem solid rgba(var(--one-color),1);
+}
+
+.anom-bar-container.neutralized .text-part,
+.anom-bar-container.neutralised .text-part,
+.anom-bar-container.pending .text-part,
+.anom-bar-container.explained .text-part {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+}
+
+.text-part .disrupt-class::after,
+.text-part .risk-class::after,
+.text-part .disrupt-class::before,
+.text-part .risk-class::before {
+    content: "";
+    position: absolute;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
+    border: 0.25rem solid rgb(12, 12, 12);
+    border: 0.25rem solid rgb(var(--swatch-menutxt-dark-color, 12, 12, 12));
+    width: 2.5rem;
+    height: 2.5rem;
+    top: -webkit-calc(50% - 1.5rem);
+    top: -moz-calc(50% - 1.5rem);
+    top: calc(50% - 1.5rem);
+    font-size: 2em;
+    background-color: rgb(252, 252, 252);
+    background-color: rgb(var(--swatch-background, 252, 252, 252));
+    -webkit-background-size: contain;
+       -moz-background-size: contain;
+         -o-background-size: contain;
+            background-size: contain;
+    background-position: center center;
+}
+
+.text-part .disrupt-class::after,
+.text-part .risk-class::after {
+    right: 0.15em;
+}
+
+.text-part .disrupt-class::before,
+.text-part .risk-class::before {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+       -moz-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    background-color: rgb(12, 12, 12);
+    background-color: rgb(var(--swatch-menubg-black-color, 12, 12, 12));
+    width: 3rem;
+    height: 3rem;
+    top: -webkit-calc(50% - 1.5rem);
+    top: -moz-calc(50% - 1.5rem);
+    top: calc(50% - 1.5rem);
+    border: 0;
+    right: 1rem;
+    text-align: left;
+    font-size: 1em;
+    padding-left: 0.5rem;
+    color: rgb(252, 252, 252);
+    color: rgb(var(--swatch-text-secondary-color, 252, 252, 252));
+}
+
+.anom-bar-container.amida .text-part .disrupt-class::before,
+.anom-bar-container.critical .text-part .risk-class::before {
+    content: "5";
+}
+
+.anom-bar-container.ekhi .text-part .disrupt-class::before,
+.anom-bar-container.danger .text-part .risk-class::before {
+    content: "4";
+}
+
+.anom-bar-container.keneq .text-part .disrupt-class::before,
+.anom-bar-container.warning .text-part .risk-class::before {
+    content: "3";
+}
+
+.anom-bar-container.vlam .text-part .disrupt-class::before,
+.anom-bar-container.caution .text-part .risk-class::before {
+    content: "2";
+}
+
+.anom-bar-container.dark .text-part .disrupt-class::before,
+.anom-bar-container.notice .text-part .risk-class::before {
+    content: "1";
+}
+
+.anom-bar-container.amida .text-part .disrupt-class::after,
+.anom-bar-container.critical .text-part .risk-class::after {
+    background-color: rgb(196,2,51);
+background-color: rgb(var(--five-color));
+}
+
+.anom-bar-container.amida .text-part .disrupt-class::after {
+    background-image: url("https://scp-wiki.wikidot.com/local--files/component:anomaly-class-bar/amida-icon.svg");
+}
+
+.anom-bar-container.critical .text-part .risk-class::after {
+    background-image: url("https://scp-wiki.wikidot.com/local--files/component:anomaly-class-bar/critical-icon.svg");
+}
+
+.anom-bar-container.ekhi .text-part .disrupt-class::after,
+.anom-bar-container.danger .text-part .risk-class::after {
+    background-color: rgb(255,109,0);
+background-color: rgb(var(--four-color));
+}
+
+.anom-bar-container.ekhi .text-part .disrupt-class::after {
+    background-image: url("https://scp-wiki.wikidot.com/local--files/component:anomaly-class-bar/ekhi-icon.svg");
+}
+
+.anom-bar-container.danger .text-part .risk-class::after {
+    background-image: url("https://scp-wiki.wikidot.com/local--files/component:anomaly-class-bar/danger-icon.svg");
+}
+
+.anom-bar-container.keneq .text-part .disrupt-class::after,
+.anom-bar-container.warning .text-part .risk-class::after {
+    background-color: rgb(255,211,0);
+background-color: rgb(var(--three-color));
+}
+
+.anom-bar-container.keneq .text-part .disrupt-class::after {
+    background-image: url("https://scp-wiki.wikidot.com/local--files/component:anomaly-class-bar/keneq-icon.svg");
+}
+
+.anom-bar-container.warning .text-part .risk-class::after {
+    background-image: url("https://scp-wiki.wikidot.com/local--files/component:anomaly-class-bar/warning-icon.svg");
+}
+
+.anom-bar-container.vlam .text-part .disrupt-class::after,
+.anom-bar-container.caution .text-part .risk-class::after {
+    background-color: rgb(0,135,189);
+background-color: rgb(var(--two-color));
+}
+
+.anom-bar-container.vlam .text-part .disrupt-class::after {
+    background-image: url("https://scp-wiki.wikidot.com/local--files/component:anomaly-class-bar/vlam-icon.svg");
+}
+
+.anom-bar-container.caution .text-part .risk-class::after {
+    background-image: url("https://scp-wiki.wikidot.com/local--files/component:anomaly-class-bar/caution-icon.svg");
+}
+
+.anom-bar-container.dark .text-part .disrupt-class::after,
+.anom-bar-container.notice .text-part .risk-class::after {
+    background-color: rgb(0,159,107);
+background-color: rgb(var(--one-color));
+}
+
+.anom-bar-container.dark .text-part .disrupt-class::after {
+    background-image: url("https://scp-wiki.wikidot.com/local--files/component:anomaly-class-bar/dark-icon.svg");
+}
+
+.anom-bar-container.notice .text-part .risk-class::after {
+    background-image: url("https://scp-wiki.wikidot.com/local--files/component:anomaly-class-bar/notice-icon.svg");
+}
+
+.text-part .main-class {
+    border-width: 1em !important;
+}
+
+.text-part > div .class-category {
+    --wght: 500;
+    position: relative;
+    font-weight: 500;
+    left: 0;
+}
+
+.anom-bar-container.esoteric .contain-class > .class-category {
+    max-width: 55% !important;
+}
+
+.anom-bar-container.explained .second-class,
+.anom-bar-container.explained .disrupt-class,
+.anom-bar-container.explained .risk-class,
+.anom-bar-container.explained .danger-diamond > .quadrants > .left-quad,
+.anom-bar-container.explained .danger-diamond > .quadrants > .right-quad,
+.anom-bar-container.explained .danger-diamond > .left-icon,
+.anom-bar-container.explained .danger-diamond > .right-icon,
+.anom-bar-container.neutralized .second-class,
+.anom-bar-container.neutralized .disrupt-class,
+.anom-bar-container.neutralized .risk-class,
+.anom-bar-container.neutralized .danger-diamond > .quadrants > .left-quad,
+.anom-bar-container.neutralized .danger-diamond > .quadrants > .right-quad,
+.anom-bar-container.neutralized .danger-diamond > .left-icon,
+.anom-bar-container.neutralized .danger-diamond > .right-icon,
+.anom-bar-container.neutralised .second-class,
+.anom-bar-container.neutralised .disrupt-class,
+.anom-bar-container.neutralised .risk-class,
+.anom-bar-container.neutralised .danger-diamond > .quadrants > .left-quad,
+.anom-bar-container.neutralised .danger-diamond > .quadrants > .right-quad,
+.anom-bar-container.neutralised .danger-diamond > .left-icon,
+.anom-bar-container.neutralised .danger-diamond > .right-icon,
+.anom-bar-container.pending .second-class,
+.anom-bar-container.pending .disrupt-class,
+.anom-bar-container.pending .risk-class,
+.anom-bar-container.pending .danger-diamond > .quadrants > .left-quad,
+.anom-bar-container.pending .danger-diamond > .quadrants > .right-quad,
+.anom-bar-container.pending .danger-diamond > .left-icon,
+.anom-bar-container.pending .danger-diamond > .right-icon {
+    display: none;
+}
+
+.text-part .contain-class,
+.text-part .second-class,
+.text-part .disrupt-class,
+.text-part .risk-class {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+       -moz-box-orient: horizontal;
+       -moz-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
+    line-height: 1;
+}
+
+.text-part .contain-class > div,
+.text-part .second-class > div,
+.text-part .disrupt-class > div,
+.text-part .risk-class > div {
+    width: 100%;
+}
+
+.text-part > div > .class-category,
+.anom-bar-container.esoteric .text-part > .main-class > .contain-class > .class-category {
+    font-size: 0.75em;
+}
+
+.anom-bar-container.esoteric .text-part > .main-class > .contain-class > .class-text,
+.text-part > .disrupt-class > .class-text,
+.text-part > .risk-class > .class-text {
+    font-size: -webkit-calc( 8px + (12 - 8) * ( (100vw - 400px) / ( 800 - 400) ));
+    font-size: -moz-calc( 8px + (12 - 8) * ( (100vw - 400px) / ( 800 - 400) ));
+    font-size: calc( 8px + (12 - 8) * ( (100vw - 400px) / ( 800 - 400) ));
+}
+
+.bottom-box > .diamond-part {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 3;
+    width: 100%;
+    padding-top: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    grid-area: diamond-part;
+    padding-left: 1rem;
+    -webkit-box-shadow: -0.5rem 0 0 0 rgb(12, 12, 12);
+       -moz-box-shadow: -0.5rem 0 0 0 rgb(12, 12, 12);
+            box-shadow: -0.5rem 0 0 0 rgb(12, 12, 12);
+    -webkit-box-shadow: -0.5rem 0 0 0 rgb(var(--swatch-menubg-black-color, 12, 12, 12));
+       -moz-box-shadow: -0.5rem 0 0 0 rgb(var(--swatch-menubg-black-color, 12, 12, 12));
+            box-shadow: -0.5rem 0 0 0 rgb(var(--swatch-menubg-black-color, 12, 12, 12));
+}
+
+.danger-diamond {
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    top: 2.5%;
+    left: 5%;
+}
+
+.danger-diamond a {
+    color: rgba(0,0,0,0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    z-index: 3;
+}
+
+.danger-diamond br {
+    display: none;
+}
+
+.danger-diamond > .arrows {
+    --danger-diamond-arrows: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg version='1.2' baseProfile='tiny' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 160 160' xml:space='preserve'%3E%3Cpath fill='%23010101' d='M136.1,133.3l23.9-23.9V51.2l-24-24l19.1-19.1l4.9,4.9l0-12.9l-12.9,0l4.9,4.9L133,24.2l-24-24H51l-24,24 L8,5.2l4.9-4.9L0,0.2l0,12.9l4.9-4.9L24,27.3l-24,24v58.2l23.9,23.9l-19,19L0,147.3l0,12.9l12.9,0L8,155.3l19-19l23.9,23.9h58.4 l23.9-23.9l19,19l-4.9,4.9l12.9,0l0-12.9l-4.9,4.9L136.1,133.3z M155.7,53v54.6l-22.6,22.6l-50-50L133,30.3L155.7,53z M52.8,4.5 h54.4l22.7,22.7L80,77.2L30.1,27.3L52.8,4.5z M4.3,107.6V53L27,30.3L77,80.2l-50,50L4.3,107.6z M107.4,155.9H52.6L30,133.3l50-50 l50,50L107.4,155.9z'/%3E%3C/svg%3E%0A");
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgb(var(--swatch-menubg-black-color, 12, 12, 12));
+    -webkit-mask-image: var(--danger-diamond-arrows);
+            mask-image: var(--danger-diamond-arrows);
+    -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+}
+
+.danger-diamond > .octagon {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    z-index: 0;
+    -webkit-clip-path: polygon(30% 0, 70% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0 70%, 0 30%);
+            clip-path: polygon(30% 0, 70% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0 70%, 0 30%);
+}
+
+.danger-diamond > .quadrants {
+    position: absolute;
+    width: 96%;
+    height: 96%;
+    top: 0;
+    left: 0;
+}
+
+.danger-diamond > .quadrants > div {
+    width: 67.5%;
+    padding-bottom: 50%;
+    position: absolute;
+    top: 2.25%;
+    left: 18.5%;
+    background-color: rgb(252, 252, 252);
+background-color: rgb(var(--swatch-background, 252, 252, 252));
+    -webkit-clip-path: polygon(22% 0, 77% 0, 100% 31%, 50% 100%, 0 31%);
+            clip-path: polygon(22% 0, 77% 0, 100% 31%, 50% 100%, 0 31%);
+    -webkit-transform-origin: bottom center;
+       -moz-transform-origin: bottom center;
+        -ms-transform-origin: bottom center;
+         -o-transform-origin: bottom center;
+            transform-origin: bottom center;
+}
+
+.danger-diamond > .quadrants > .left-quad {
+    -webkit-transform: rotate(270deg);
+       -moz-transform: rotate(270deg);
+        -ms-transform: rotate(270deg);
+         -o-transform: rotate(270deg);
+            transform: rotate(270deg);
+}
+
+.danger-diamond > .quadrants > .right-quad {
+    -webkit-transform: rotate(90deg);
+       -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+         -o-transform: rotate(90deg);
+            transform: rotate(90deg);
+}
+
+.danger-diamond > .quadrants > .bottom-quad {
+    background-color: transparent;
+    -webkit-transform: rotate(180deg);
+       -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+         -o-transform: rotate(180deg);
+            transform: rotate(180deg);
+}
+
+.danger-diamond > .quadrants > .bottom-quad.none {
+    background-color: rgb(252, 252, 252 ,0.25);
+    background-color: rgb(var(--swatch-background, 252, 252, 252),0.25);
+}
+
+.danger-diamond > .quadrants > .top-quad.pending {
+    background-color: rgb(12, 12, 12 ,0.25);
+    background-color: rgb(var(--swatch-menubg-black-color, 12, 12, 12),0.25);
+}
+
+.danger-diamond > .quadrants > .top-quad.neutralized,
+.danger-diamond > .quadrants > .top-quad.neutralised {
+    background-color: rgb(66, 66, 72 ,0.25);
+    background-color: rgb(var(--swatch-menubg-medium-dark-color, 66, 66, 72),0.25);
+}
+
+.danger-diamond > .quadrants > .top-quad.explained {
+    background-color: rgb(252, 252, 252 ,0.25);
+    background-color: rgb(var(--swatch-background, 252, 252, 252),0.25);
+}
+
+.anom-bar-container.esoteric .danger-diamond > .quadrants > .top-quad {
+    background-color: rgb(66, 66, 72 ,0.15);
+    background-color: rgb(var(--swatch-menubg-medium-dark-color, 66, 66, 72),0.15);
+}
+
+.anom-bar-container.keter .danger-diamond > .quadrants > .top-quad,
+.anom-bar-container.amida .danger-diamond > .quadrants > .left-quad,
+.anom-bar-container.critical .danger-diamond > .quadrants > .right-quad  {
+    background-color:rgba(196,2,51,0.25);
+    background-color: rgb(var(--five-color),0.25);
+}
+
+.anom-bar-container.ekhi .danger-diamond > .quadrants > .left-quad,
+.anom-bar-container.danger .danger-diamond > .quadrants > .right-quad {
+    background-color:rgba(255,109,0,0.25);
+    background-color: rgb(var(--five-color),0.25);
+}
+
+.anom-bar-container.euclid .danger-diamond > .quadrants > .top-quad,
+.anom-bar-container.keneq .danger-diamond > .quadrants > .left-quad,
+.anom-bar-container.warning .danger-diamond > .quadrants > .right-quad {
+    background-color:rgba(255,211,0,0.25);
+    background-color: rgb(var(--three-color),0.25);
+}
+
+.anom-bar-container.vlam .danger-diamond > .quadrants > .left-quad,
+.anom-bar-container.caution .danger-diamond > .quadrants > .right-quad {
+    background-color:rgba(0,135,189,0.25);
+    background-color: rgb(var(--two-color),0.25);
+}
+
+.anom-bar-container.safe .danger-diamond > .quadrants > .top-quad,
+.anom-bar-container.dark .danger-diamond > .quadrants > .left-quad,
+.anom-bar-container.notice .danger-diamond > .quadrants > .right-quad {
+    background-color:rgba(0,159,107,0.25);
+    background-color: rgb(var(--one-color),0.25);
+}
+
+.anom-bar-container.clear-5 .danger-diamond > .center-circle::before {
+    content: "5";
+}
+
+.anom-bar-container.clear-4 .danger-diamond > .center-circle::before {
+    content: "4";
+}
+
+.anom-bar-container.clear-3 .danger-diamond > .center-circle::before {
+    content: "3";
+}
+
+.anom-bar-container.clear-2 .danger-diamond > .center-circle::before {
+    content: "2";
+}
+
+.anom-bar-container.clear-1 .danger-diamond > .center-circle::before {
+    content: "1";
+}
+
+.danger-diamond > .top-icon,
+.danger-diamond > .right-icon,
+.danger-diamond > .left-icon,
+.danger-diamond > .bottom-icon {
+    position: absolute;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 33%;
+    height: 33%;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
+    border: 0.1875rem solid rgb(12, 12, 12);
+    border: 0.1875rem solid rgb(var(--swatch-menubg-black-color, 12, 12, 12));
+    overflow: hidden;
+    z-index: 2;
+}
+
+.danger-diamond > .top-icon {
+    top: 0.25rem;
+    left: 33.5%;
+}
+
+.danger-diamond > .right-icon {
+    right: 0.25rem;
+    top: 33.5%;
+}
+
+.danger-diamond > .left-icon {
+    left: 0.25rem;
+    top: 33.5%;
+}
+
+.danger-diamond > .bottom-icon {
+    bottom: 0.25rem;
+    left: 33.5%;
+}
+
+.anom-bar-container.neutralized .danger-diamond > .top-icon,
+.anom-bar-container.neutralised .danger-diamond > .top-icon,
+.anom-bar-container.pending .danger-diamond > .top-icon,
+.anom-bar-container.explained .danger-diamond > .top-icon {
+    width: 65%;
+    height: 65%;
+    top: 17.5%;
+    left: 17.5%;
+    border-width: 0.3625rem;
+}
+
+.anom-bar-container.pending .danger-diamond > .top-icon {
+    background-color: rgb(var(--swatch-menubg-black-color, 12, 12, 12));
+}
+
+.anom-bar-container:not(.esoteric) .danger-diamond > .bottom-icon {
+    display: none;
+}
+
+.danger-diamond > .top-icon::before,
+.danger-diamond > .right-icon::before,
+.danger-diamond > .left-icon::before,
+.danger-diamond > .bottom-icon::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    top: 0;
+    left: 0;
+}
+
+.anom-bar-container.neutralized .danger-diamond > .top-icon,
+.anom-bar-container.neutralised .danger-diamond > .top-icon {
+    background-color: rgb(252, 252, 252);
+    background-color: rgb(var(--swatch-background, 252, 252, 252));
+}
+
+.anom-bar-container.neutralized .danger-diamond > .top-icon::before,
+.anom-bar-container.neutralised .danger-diamond > .top-icon::before {
+    background-color: rgba(66, 66, 72 ,0.15);
+    background-color: rgba(var(--swatch-menubg-medium-dark-color, 66, 66, 72),0.15);
+    background-image: url("https://scp-wiki.wikidot.com/local--files/component:anomaly-class-bar/neutralized-icon.svg");
+    -webkit-background-size: 110% 110%;
+       -moz-background-size: 110% 110%;
+         -o-background-size: 110% 110%;
+            background-size: 110% 110%;
+    background-position: center center;
+}
+
+.anom-bar-container.pending .danger-diamond > .top-icon::before {
+    background-color: rgb(12, 12, 12);
+    background-color: rgb(var(--swatch-menubg-black-color, 12, 12, 12));
+    background-image: url("https://scp-wiki.wikidot.com/local--files/component:anomaly-class-bar/pending-icon.svg");
+}
+
+.anom-bar-container.explained .danger-diamond > .top-icon::before {
+    background-color: rgb(252, 252, 252);
+    background-color: rgb(var(--swatch-background, 252, 252, 252));
+    background-image: url("https://scp-wiki.wikidot.com/local--files/component:anomaly-class-bar/explained-icon.svg");
+}
+
+.anom-bar-container.esoteric .danger-diamond > .top-icon::before {
+    background-color: rgb(252, 252, 252);
+    background-color: rgb(var(--swatch-background, 252, 252, 252));
+    background-image: url("https://scp-wiki.wikidot.com/local--files/component:anomaly-class-bar/esoteric-icon.svg");
+    -webkit-filter: invert(1);
+            filter: invert(1);
+}
+
+.anom-bar-container.keter .danger-diamond > .top-icon::before,
+.anom-bar-container.amida .danger-diamond > .left-icon::before,
+.anom-bar-container.critical .danger-diamond > .right-icon::before {
+    background-color: rgb(196,2,51);
+background-color: rgb(var(--five-color));
+}
+
+.anom-bar-container.keter .danger-diamond > .top-icon::before {
+    background-image: url("https://scp-wiki.wikidot.com/local--files/component:anomaly-class-bar/keter-icon.svg");
+}
+
+.anom-bar-container.amida .danger-diamond > .left-icon::before {
+    background-image: url("https://scp-wiki.wikidot.com/local--files/component:anomaly-class-bar/amida-icon.svg");
+}
+
+.anom-bar-container.critical .danger-diamond > .right-icon::before {
+    background-image: url("https://scp-wiki.wikidot.com/local--files/component:anomaly-class-bar/critical-icon.svg");
+}
+
+.anom-bar-container.ekhi .danger-diamond > .left-icon::before,
+.anom-bar-container.danger .danger-diamond > .right-icon::before {
+    background-color: rgb(255,109,0);
+background-color: rgb(var(--four-color));
+}
+
+.anom-bar-container.ekhi .danger-diamond > .left-icon::before {
+    background-image: url("https://scp-wiki.wikidot.com/local--files/component:anomaly-class-bar/ekhi-icon.svg");
+}
+
+.anom-bar-container.danger .danger-diamond > .right-icon::before {
+    background-image: url("https://scp-wiki.wikidot.com/local--files/component:anomaly-class-bar/danger-icon.svg");
+}
+
+.anom-bar-container.euclid .danger-diamond > .top-icon::before,
+.anom-bar-container.keneq .danger-diamond > .left-icon::before,
+.anom-bar-container.warning .danger-diamond > .right-icon::before {
+    background-color: rgb(255,211,0);
+background-color: rgb(var(--three-color));
+}
+
+.anom-bar-container.euclid .danger-diamond > .top-icon::before {
+    background-image: url("https://scp-wiki.wikidot.com/local--files/component:anomaly-class-bar/euclid-icon.svg");
+}
+
+.anom-bar-container.keneq .danger-diamond > .left-icon::before {
+    background-image: url("https://scp-wiki.wikidot.com/local--files/component:anomaly-class-bar/keneq-icon.svg");
+}
+
+.anom-bar-container.warning .danger-diamond > .right-icon::before {
+    background-image: url("https://scp-wiki.wikidot.com/local--files/component:anomaly-class-bar/warning-icon.svg");
+}
+
+.anom-bar-container.vlam .danger-diamond > .left-icon::before,
+.anom-bar-container.caution .danger-diamond > .right-icon::before {
+    background-color: rgb(0,135,189);
+background-color: rgb(var(--two-color));
+}
+
+.anom-bar-container.vlam .danger-diamond > .left-icon::before {
+    background-image: url("https://scp-wiki.wikidot.com/local--files/component:anomaly-class-bar/vlam-icon.svg");
+}
+
+.anom-bar-container.caution .danger-diamond > .right-icon::before {
+    background-image: url("https://scp-wiki.wikidot.com/local--files/component:anomaly-class-bar/caution-icon.svg");
+}
+
+.anom-bar-container.safe .danger-diamond > .top-icon::before,
+.anom-bar-container.dark .danger-diamond > .left-icon::before,
+.anom-bar-container.notice .danger-diamond > .right-icon::before {
+    background-color: rgb(0,159,107);
+background-color: rgb(var(--one-color));
+}
+
+.anom-bar-container.safe .danger-diamond > .top-icon::before {
+    background-image: url("https://scp-wiki.wikidot.com/local--files/component:anomaly-class-bar/safe-icon.svg");
+}
+
+.anom-bar-container.dark .danger-diamond > .left-icon::before {
+    background-image: url("https://scp-wiki.wikidot.com/local--files/component:anomaly-class-bar/dark-icon.svg");
+}
+
+.anom-bar-container.notice .danger-diamond > .right-icon::before {
+    background-image: url("https://scp-wiki.wikidot.com/local--files/component:anomaly-class-bar/notice-icon.svg");
+}
+
+.anom-bar-container.none .danger-diamond > .bottom-icon::before {
+    background-image: url("{$secondary-icon}");
+    background-size: contain;
+}
+
+@media (max-width: 960px ) {
+    .anom-bar > .top-box {
+        padding-bottom: 1.5em;
+    }
+
+    .anom-bar > .bottom-box {
+        -ms-grid-columns: 1fr 0.5rem 6rem;
+        grid-template-columns: 1fr 6rem;
+        height: 6rem;
+    }
+
+    .anom-bar-container.esoteric .text-part > .main-class > .contain-class > .class-text, .text-part > .disrupt-class > .class-text, .text-part > .risk-class > .class-text {
+        font-size: -webkit-calc( 18px + (24 - 18) * ( (100vw - 400px) / ( 960 - 300) ));
+        font-size: -moz-calc( 18px + (24 - 18) * ( (100vw - 400px) / ( 960 - 300) ));
+        font-size: calc( 18px + (24 - 18) * ( (100vw - 400px) / ( 960 - 300) ));
+    }
+
+    .anom-bar-container.esoteric .text-part > .main-class > .contain-class > .class-text {
+        font-size: -webkit-calc( 12px + (18 - 12) * ( (100vw - 400px) / ( 960 - 300) ));
+        font-size: -moz-calc( 12px + (18 - 12) * ( (100vw - 400px) / ( 960 - 300) ));
+        font-size: calc( 12px + (18 - 12) * ( (100vw - 400px) / ( 960 - 300) ));
+    }
+
+    .anom-bar-container.esoteric .text-part > .main-class > .second-class > .class-text {
+        font-size: -webkit-calc( 18px + (24 - 18) * ( (100vw - 400px) / ( 960 - 300) ));
+        font-size: -moz-calc( 18px + (24 - 18) * ( (100vw - 400px) / ( 960 - 300) ));
+        font-size: calc( 18px + (24 - 18) * ( (100vw - 400px) / ( 960 - 300) ));
+    }
+
+    .anom-bar-container:not(.esoteric) .text-part > .main-class > .contain-class > .class-text {
+        font-size: -webkit-calc( 20px + (40 - 20) * ( (100vw - 400px) / ( 960 - 300) ));
+        font-size: -moz-calc( 20px + (40 - 20) * ( (100vw - 400px) / ( 960 - 300) ));
+        font-size: calc( 20px + (40 - 20) * ( (100vw - 400px) / ( 960 - 300) ));
+    }
+
+    .text-part > .main-class {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 1;
+        -ms-grid-column: 1;
+    }
+
+    .text-part > .disrupt-class {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+    }
+
+    .text-part > .risk-class {
+        -ms-grid-row: 5;
+        -ms-grid-column: 1;
+    }
+}
+
+@media (max-width: 875px ) {
+    .text-part > div {
+        padding: 0.25rem 0;
+    }
+
+    .anom-bar-container.pending .bottom-box > .text-part,
+    .anom-bar-container.neutralized .bottom-box > .text-part,
+    .anom-bar-container.neutralised .bottom-box > .text-part,
+    .anom-bar-container.explained .bottom-box > .text-part {
+        height: 6rem;
+    }
+
+    .bottom-box > .text-part {
+        grid-template-areas: 
+            "main-class" 
+            "disrupt-class"
+            "risk-class";
+        -ms-grid-rows: 2fr 0.25rem 1fr 0.25rem 1fr;
+        grid-template-rows: 3fr 2fr 2fr;
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        height: 8rem;
+    }
+
+    .anom-bar > .bottom-box {
+        -ms-grid-columns: 1fr 0.5rem 8rem;
+        grid-template-columns: 1fr 8rem;
+        height: 8rem;
+    }
+
+    .anom-bar-container.esoteric .text-part > .main-class::after,
+    .text-part > .main-class::after {
+        height: 3rem;
+        width: 3rem;
+    }
+
+    .text-part .disrupt-class::after, 
+    .text-part .risk-class::after {
+        height: 1.75rem;
+        width: 1.75rem;
+    }
+
+    .anom-bar-container.esoteric .text-part > .main-class::after,
+    .text-part > .main-class::after,
+    .text-part .disrupt-class::after, 
+    .text-part .risk-class::after {
+        top: -webkit-calc(50% - 1.125rem);
+        top: -moz-calc(50% - 1.125rem);
+        top: calc(50% - 1.125rem);
+        border-width: 0.25rem;
+    }
+
+    .text-part > .main-class::before {
+        height: 2.5rem;
+        width: 2.5rem;
+        border-width: 0.25rem;
+        top: -webkit-calc(50% - 1.45rem);
+        top: -moz-calc(50% - 1.45rem);
+        top: calc(50% - 1.45rem);
+    }
+
+    .text-part .disrupt-class::before, 
+    .text-part .risk-class::before {
+        height: 2.25rem;
+        width: 2.25rem;
+        top: -webkit-calc(50% - 1.125rem);
+        top: -moz-calc(50% - 1.125rem);
+        top: calc(50% - 1.125rem);
+        right: 0.75rem;
+    }
+
+    .anom-bar-container.esoteric .text-part > .main-class::after {
+        top: 0.15rem;
+    }
+
+    .anom-bar-container.esoteric .text-part > .main-class::before {
+        top: 0.15rem;
+        width: 5.75rem;
+        height: 3rem;
+        right: 1.25rem;
+        -webkit-background-size: 100% 100%;
+           -moz-background-size: 100% 100%;
+             -o-background-size: 100% 100%;
+                background-size: 100% 100%;
+        background-position: left -20px center;
+    }
+
+    .anom-bar-container.esoteric .contain-class > .class-category {
+        max-width: 100% !important;
+    }
+
+    .anom-bar-container.pending .bottom-box > .text-part,
+    .anom-bar-container.neutralized .bottom-box > .text-part,
+    .anom-bar-container.neutralised .bottom-box > .text-part,
+    .anom-bar-container.explained .bottom-box > .text-part {
+        -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+            grid-template-areas: "main-class";
+    }
+
+    .text-part .disrupt-class,
+    .text-part .risk-class {
+        padding-left: 0.25rem;
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: auto 1fr;
+        grid-template-columns: auto 1fr;
+    }
+
+    .text-part .disrupt-class *,
+    .text-part .risk-class * {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+}
+
+@media (max-width: 875px ) and (min-width: 480px ) {
+    .anom-bar-container.pending .anom-bar > .bottom-box,
+    .anom-bar-container.neutralized .anom-bar > .bottom-box,
+    .anom-bar-container.neutralised .anom-bar > .bottom-box,
+    .anom-bar-container.explained .anom-bar > .bottom-box {
+        -ms-grid-columns: 1fr 6rem;
+        grid-template-columns: 1fr 6rem;
+        height: 6rem;
+    }
+}
+
+@media (max-width: 480px ) {
+    .anom-bar {
+        position: relative;
+    }
+
+    .anom-bar > .top-box {
+        height: 40vw;
+        max-height: 40vw;
+                grid-template-areas: 
+            "."
+            "top-left-box"
+            "top-center-box"
+            "top-right-box"
+            ".";
+        -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        font-size: -webkit-calc(5px + (10 - 5) * ( (100vw - 300px) / ( 480 - 300) ));
+        font-size: -moz-calc(5px + (10 - 5) * ( (100vw - 300px) / ( 480 - 300) ));
+        font-size: calc(5px + (10 - 5) * ( (100vw - 300px) / ( 480 - 300) ));
+        margin: 0 0 1rem 0;
+        padding-left: 1em;
+    }
+
+    .top-box .top-left-box {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+           -moz-box-orient: vertical;
+           -moz-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+           -moz-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+           -moz-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+        line-height: 1;
+    }
+
+    .top-left-box > .item {
+        font-size: 3em;
+    }
+
+    .top-box .top-left-box > span {
+        width: 100%;
+    }
+
+    .top-box .top-center-box {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+           -moz-box-orient: horizontal;
+           -moz-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+    width: 100%;
+        max-width: 48vw;
+        margin: 0 0 0 -0.15rem;
+    height: 2rem;
+    }
+
+    .top-center-box > div {
+        height: 25%;
+        margin: 0.15rem 0.15rem 0 0.15rem;
+    }
+
+    .top-box .top-right-box {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+           -moz-box-orient: vertical;
+           -moz-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    width: 100%;
+        max-width: 48vw;
+        margin: 0 0 0 -0.15rem;
+    height: 3rem;
+    }
+
+    .top-right-box > div {
+        line-height: 1;
+    }
+
+    .top-right-box > .level {
+        font-size: 4em;
+    }
+
+    .top-right-box > .clearance {
+        line-height: 1.5;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+           -moz-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        font-size: -webkit-calc(14px + (14 - 10) * ( (100vw - 400px) / ( 480 - 300) ));
+        font-size: -moz-calc(14px + (14 - 10) * ( (100vw - 400px) / ( 480 - 300) ));
+        font-size: calc(14px + (14 - 10) * ( (100vw - 400px) / ( 480 - 300) ));
+        width: initial;
+        height: 1.5rem;
+    }
+
+    .top-right-box > .clearance::before {
+        line-height: 0.5;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+           -moz-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        width: initial;
+        height: initial;
+        position: initial;
+    }
+
+    .anom-bar > .bottom-box {
+        position: initial;
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        height: 8rem;
+    }
+
+    .anom-bar-container:not(.esoteric) .text-part > .main-class::before {
+        width: 2.5rem;
+        height: 2.5rem;
+        top: -webkit-calc(50% - 1.475rem);
+        top: -moz-calc(50% - 1.475rem);
+        top: calc(50% - 1.475rem);
+        right: 0.5rem;
+    }
+
+    .text-part > div > .class-category, 
+    .anom-bar-container.esoteric .text-part > .main-class > .contain-class > .class-category {
+        font-size: 1em;
+    }
+
+    .text-part .disrupt-class,
+    .text-part .risk-class {
+        font-size: 0.9em;
+    }
+
+    .text-part > .main-class::after,
+    .text-part .disrupt-class::after,
+    .text-part .risk-class::after {
+        height: 2rem;
+        width: 2rem;
+        top: -webkit-calc(50% - 1.25rem);
+        top: -moz-calc(50% - 1.25rem);
+        top: calc(50% - 1.25rem);
+    }
+
+    .text-part > .main-class::before,
+    .text-part .disrupt-class::before,
+    .text-part .risk-class::before {
+        height: 2.5rem;
+        width: 2.5rem;
+        font-size: 1rem;
+        top: -webkit-calc(50% - 1.25rem);
+        top: -moz-calc(50% - 1.25rem);
+        top: calc(50% - 1.25rem);
+        right: 1.5rem;
+    }
+
+    .anom-bar-container.esoteric .text-part > .main-class::before {
+        top: 0.15rem;
+        width: 4.5rem;
+        height: 2.5rem;
+        right: 1rem;
+        -webkit-background-size: 100% 100%;
+           -moz-background-size: 100% 100%;
+             -o-background-size: 100% 100%;
+                background-size: 100% 100%;
+        background-position: left -10px center;
+    }
+
+    .anom-bar-container.esoteric .text-part > .main-class::after {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+    .bottom-box > .diamond-part {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 40vw;
+        height: 40vw;
+        padding: 0;
+    }
+
+    .diamond-part * {
+        background-repeat: no-repeat;
+    }
+
+    .top-box .top-left-box {
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+    }
+
+    .top-box .top-center-box {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+    }
+
+    .top-box .top-right-box {
+        -ms-grid-row: 4;
+        -ms-grid-column: 1;
+    }
+
+    .anom-bar-container.pending .anom-bar > .bottom-box,
+    .anom-bar-container.neutralized .anom-bar > .bottom-box,
+    .anom-bar-container.neutralised .anom-bar > .bottom-box,
+    .anom-bar-container.explained .anom-bar > .bottom-box {
+        height: 6rem;
+    }
+
+    .danger-diamond > .top-icon {
+        top: 0.375rem;
+    }
+
+    .danger-diamond > .right-icon {
+        right: 0.375rem;
+    }
+
+    .danger-diamond > .left-icon {
+        left: 0.375rem;
+    }
+
+    .danger-diamond > .bottom-icon {
+        bottom: 0.375rem;
+    }
+}
+
+@supports not (--css: variables) {
+
+    .anom-bar {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-flow: column nowrap;
+           -moz-box-orient: vertical;
+           -moz-box-direction: normal;
+            -ms-flex-flow: column nowrap;
+                flex-flow: column nowrap;
+    }
+
+    .anom-bar > .top-box { 
+        display: -webkit-box; 
+        display: -webkit-flex; 
+        display: -moz-box; 
+        display: -ms-flexbox; 
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+           -moz-box-orient: horizontal;
+           -moz-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-flex-wrap: nowrap;
+            -ms-flex-wrap: nowrap;
+                flex-wrap: nowrap;
+    }
+
+    .top-box .top-center-box {
+        -webkit-box-flex: 2;
+        -webkit-flex-grow: 2;
+           -moz-box-flex: 2;
+            -ms-flex-positive: 2;
+                flex-grow: 2;
+    }
+
+    .anom-bar > .bottom-box {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .bottom-box > .text-part {
+        -webkit-box-flex: 1;
+        -webkit-flex-grow: 1;
+           -moz-box-flex: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1;
+        width: 100%;
+    }
+
+    .anom-bar-container .text-part .main-class {
+        overflow: hidden;
+    }
+
+    .anom-bar-container .text-part .disrupt-class,
+    .anom-bar-container .text-part .risk-class {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+           -moz-box-orient: horizontal;
+           -moz-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-flex-wrap: nowrap;
+            -ms-flex-wrap: nowrap;
+                flex-wrap: nowrap; 
+        -webkit-box-align: center; 
+        -webkit-align-items: center; 
+           -moz-box-align: center; 
+            -ms-flex-align: center; 
+                align-items: center;
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+           -moz-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+    }
+
+    .anom-bar-container .text-part .disrupt-class .class-category,
+    .anom-bar-container .text-part .risk-class  .class-category {
+        -webkit-flex-shrink: 4;
+            -ms-flex-negative: 4;
+                flex-shrink: 4;
+    }
+
+    .bottom-box > .diamond-part {
+        width: 6rem;
+        height: 6rem;
+        -webkit-box-flex: 0;
+        -webkit-flex-grow: 0;
+           -moz-box-flex: 0;
+            -ms-flex-positive: 0;
+                flex-grow: 0;
+        -webkit-flex-shrink: 0;
+            -ms-flex-negative: 0;
+                flex-shrink: 0;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+@media (max-width: 480px ) {
+        .anom-bar > .top-box {
+            height: 6rem;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+               -moz-box-orient: vertical;
+               -moz-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-flex-wrap: nowrap;
+                -ms-flex-wrap: nowrap;
+                    flex-wrap: nowrap;
+            width: -webkit-calc(100% - 40vw);
+            width: -moz-calc(100% - 40vw);
+            width: calc(100% - 40vw);
+        }
+
+        .top-box .top-left-box {
+            display: initial;
+        }
+
+        .top-box > * {
+            width: 100%;
+            height: auto;
+        }
+
+        .top-box .top-center-box {
+                -webkit-box-flex: 0;
+                -webkit-flex-grow: 0;
+                   -moz-box-flex: 0;
+                    -ms-flex-positive: 0;
+                        flex-grow: 0;
+        }
+
+    }
+}
+</style>
+<style>/*
+	SCP Sigma 9
+	[2014 Wikidot Theme]
+	Created for the SCP Foundation by Aelanna
+	Edited for SCP Foundation by Dr Devan
+*/
+
+@charset "utf-8";
+
+@import url('https://scp-wiki.wdfiles.com/local--files/component%3Atheme/font-bauhaus.css');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
+/* COMMON */
+#content-wrap {
+	position: relative;
+	margin: 2em auto 0;
+	max-width: 1040px;
+	min-height: 1300px;
+	height: auto !important;
+	height: 1500px;
+}
+
+h1, #page-title {
+	color: #901;
+	padding: 0 0 .25em;
+	margin: 0 0 .6em;
+	font-weight: normal;
+}
+
+h1 {
+	margin-top: .7em;
+	padding: 0;
+	font-weight: bold;
+}
+
+h2, h3, h4, h5, h6 {
+	margin: .5em 0 .4em;
+	padding: 0;
+	letter-spacing: 1px;
+}
+
+#page-title {
+	border-color: #bbb;
+}
+
+.meta-title {
+	border-bottom: solid 1px #bbb;
+	color: #901;
+	font-weight: normal;
+	margin: 0 0 .6em;
+	padding: 0 0 .25em;
+	font-size: 200%;
+}
+
+.meta-title p {
+	margin: 0;
+}
+
+ul {
+	list-style: square;
+}
+
+li, p {
+	line-height: 141%;
+}
+
+a {
+	color: #b01;
+	text-decoration: none;
+	background: transparent;
+}
+
+a:visited {
+	color: #824;
+}
+
+a:hover {
+	text-decoration: underline;
+	background-color: transparent;
+}
+
+#side-bar a:visited,
+#interwiki a:visited {
+	color: #b01;
+}
+
+a.newpage {
+	color: #d61;
+	text-decoration: none;
+	background: transparent;
+}
+
+.form-control {
+	width: 95%;
+}
+
+/* GLOBAL WIDTH */
+#header, #top-bar {
+	width: 90%;
+	max-width: 980px;
+	margin: 0 auto;
+}
+
+.mobile-top-bar {
+	display: none;
+	position: absolute;
+	left: 1em;
+	bottom: 0;
+	z-index: 0;
+}
+
+body {
+	background-color: #fff;
+	font-size: .8em;
+	color: #333;
+}
+
+#interwiki body {
+	background-color: transparent;
+}
+
+div#container-wrap {
+	background: url('https://scp-wiki.wdfiles.com/local--files/component:theme/body_bg.png') top left repeat-x;
+}
+
+sup {
+	vertical-align: top;
+	position: relative;
+	top: -.5em;
+}
+
+/* HEADER */
+#header {
+	height: 140px;
+	position: relative;
+	z-index: 10;
+	padding-bottom: 22px; /* FOR MENU */
+	background: url('https://scp-wiki.wdfiles.com/local--files/component:theme/logo.png') 10px 40px no-repeat;
+	background-size: 100px;
+	background-position: 10px 64%;
+}
+
+#search-top-box {
+	position: absolute;
+	top: 79px;
+	right: 9px;
+	width: 250px;
+	text-align: right;
+}
+
+#search-top-box-input {
+	border: solid 1px #999;
+	border-radius: 5px;
+	color: #ccc;
+	background-color: #300;
+	box-shadow: inset 1px 1px 3px rgba(0, 0, 0, .5);
+}
+
+#search-top-box-input:hover,
+#search-top-box-input:focus {
+	border: solid 1px #fff;
+	color: #fff;
+	background-color: #633;
+	box-shadow: inset 1px 1px 3px rgba(0, 0, 0, .8);
+}
+
+#search-top-box-form input[type='submit'] {
+	border: solid 1px #999;
+	border-radius: 5px;
+	padding: 2px 5px;
+	font-size: 90%;
+	font-weight: bold;
+	color: #ccc;
+	background-color: #633;
+	background-image: linear-gradient(to bottom, #966, #633, #300);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, .5);
+	cursor: pointer;
+}
+
+#search-top-box-form input[type='submit']:hover,
+#search-top-box-form input[type='submit']:focus {
+	border: solid 1px #fff;
+	color: #fff;
+	text-shadow: 0 0 1px rgba(255, 255, 255, .25);
+	background-color: #966;
+	background-image: linear-gradient(to bottom, #c99, #966, #633);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, .8);
+}
+
+#login-status {
+	color: #aaa;
+	font-size: 90%;
+	z-index: 30;
+}
+
+#login-status a {
+	background: transparent;
+	color: #ddd;
+}
+
+#login-status ul a {
+	color: #700;
+	background: transparent;
+}
+
+#account-topbutton {
+	background: #ccc;
+	color: #700;
+}
+
+.printuser img.small {
+	margin-right: 1px;
+}
+
+#header h1 {
+	margin-left: 120px;
+	padding: 0;
+	float: left;
+	max-height: 95px;
+}
+
+#header h2 {
+	margin-left: 120px;
+	padding: 0;
+	clear: left;
+	float: left;
+	font-size: 105%;
+	max-height: 38px;
+}
+
+#header h1 a {
+	display: block;
+	margin: 0;
+	padding: 80px 0 25px;
+	line-height: 0px;
+	max-height: 0;
+	color: #eee;
+	background: transparent;
+	font-family: BauhausLTDemi, 'Nanum Gothic', Arial, sans-serif;
+	font-size: 180%;
+	text-decoration: none;
+	text-shadow: 3px 3px 5px #000;
+	letter-spacing: .9px;
+}
+
+#header h2 span {
+	display: block;
+	margin: 0;
+	padding: 19px 0;
+	line-height: 0px;
+	max-height: 0;
+	font-weight: bold;
+	color: #f0f0c0;
+	text-shadow: 1px 1px 1px #000;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .8);
+}
+
+/* TOP MENU */
+#top-bar {
+	position: absolute;
+	top: 140px;
+	height: 21px;
+	width: 100%;
+	line-height: 18px;
+	padding: 0;
+	margin: 0 auto;
+	z-index: 20;
+	font-size: 90%;
+}
+
+#top-bar ul {
+	float: right;
+}
+
+#top-bar li {
+	margin: 0;
+}
+
+#top-bar a {
+	color: #fff;
+	background: transparent;
+}
+
+#top-bar ul li {
+	border: 0;
+	position: relative;
+}
+
+#top-bar ul li ul {
+	border: solid 1px #666;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, .5);
+	border-top: 0;
+	border-width: 0 1px;
+	width: auto;
+}
+
+#top-bar ul li a {
+	border-left: solid 1px rgba(64, 64, 64, .1);
+	border-right: solid 1px rgba(64, 64, 64, .1);
+	text-decoration: none;
+	padding: .25em min(.75vw, 1em);
+}
+
+#top-bar .top-bar > ul > li > a,
+#top-bar .mobile-top-bar > ul > li > a {
+	font-weight: bold;
+}
+
+#top-bar ul li.sfhover a,
+#top-bar ul li:hover a {
+	background: #eee;
+	color: #a01;
+	border-left: solid 1px rgba(64, 64, 64, 1);
+	border-right: solid 1px rgba(64, 64, 64, 1);
+}
+
+#top-bar ul li.sfhover ul li a,
+#top-bar ul li:hover ul li a {
+	border-width: 0;
+	width: 150px;
+	border-top: 1px solid #ddd;
+	line-height: 160%;
+	height: auto;
+	max-height: none;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+#top-bar ul li.sfhover a:hover,
+#top-bar ul li:hover a:hover {
+	background: #fff;
+	text-decoration: none;
+}
+
+#top-bar ul li ul li,
+#top-bar ul li ul li.sfhover,
+#top-bar ul li ul li:hover {
+	border-width: 0;
+}
+
+#top-bar ul li ul li a {
+	border-width: 0;
+}
+
+#top-bar ul li ul a, #top-bar a:hover {
+	color: #a01;
+}
+
+.top-bar ul li:last-of-type ul {
+	right: 0;
+}
+
+
+/* SIDE MENU */
+#side-bar {
+	clear: none;
+	float: none;
+	position: absolute;
+	top: .5em;
+	left: 2em;
+	width: 17em;
+	padding: 0;
+	border: none;
+	display: block;
+	overscroll-behavior: none;
+}
+
+#interwiki .side-block {
+	margin: 5px;
+}
+
+#side-bar .side-block,
+#interwiki .side-block {
+	padding: 10px;
+	border: 1px solid #600;
+	border-radius: 10px;
+	box-shadow: 0 2px 6px rgba(102, 0, 0, .5);
+	background: #fff;
+	margin-bottom: 15px;
+}
+
+#side-bar .side-block.media {
+	background: #e5e5ff;
+}
+
+#side-bar .side-block.resources {
+	background: #e7f7e9; /* Changed from #fff0f0 */
+}
+
+#side-bar .side-area {
+	padding: 10px;
+}
+
+#side-bar .heading,
+#interwiki .heading {
+	color: #600;
+	border-bottom: solid 1px #600;
+	padding-left: 15px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	font-size: 8pt;
+	font-weight: bold;
+}
+
+#side-bar p,
+#interwiki p {
+	margin: 0;
+}
+
+#side-bar .menu-item,
+#interwiki .menu-item {
+	margin: 2px 0;
+}
+
+#side-bar .menu-item.small {
+	font-size: 90%; /* For sidebar item with smaller text, like SCP series links */
+}
+
+#side-bar .menu-item img,
+#interwiki .menu-item img {
+	width: 13px;
+	height: 13px;
+	border: 0;
+	margin-right: 2px;
+	position: relative;
+	bottom: -2px;
+}
+
+#side-bar .menu-item a,
+#interwiki .menu-item a {
+	font-weight: bold;
+}
+
+#side-bar .menu-item.inactive img {
+	opacity: .25;
+}
+
+#side-bar .menu-item.inactive a {
+	color: #999;
+}
+
+#side-bar .menu-item .sub-text {
+	font-size: 80%;
+	color: #666;
+}
+
+#side-bar .collapsible-block-link {
+	margin-left: 0;
+	font-weight: bold;
+}
+
+#side-bar .collapsible-block-unfolded-link {
+	border-bottom: solid 1px #600;
+}
+
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link {
+	margin-top: 10px;
+	margin-bottom: 5px;
+	margin-left: 15px;
+	font-size: 8pt;
+	color: #600;
+}
+
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link:hover {
+	color: #b01;
+	text-decoration: none;
+}
+
+#side-bar ul {
+	list-style-type: none;
+	padding: 0 5px;
+}
+
+/* off-canvas */
+.close-menu {
+	display: none;
+}
+
+/* side bar mobile query on their own */
+@media (max-width: 767px) {
+	#top-bar .open-menu a {
+		position: fixed;
+		top: .5em;
+		left: .5em;
+		z-index: 15;
+		font-family: 'Nanum Gothic', sans-serif;
+		font-size: 30px;
+		font-weight: 700;
+		width: 30px;
+		height: 30px;
+		line-height: .9em;
+		text-align: center;
+		border: .2em solid #888;
+		background-color: #fff;
+		border-radius: 3em;
+		color: #888;
+	}
+
+	#top-bar .open-menu a:hover {
+		text-decoration: none;
+		-webkit-box-shadow: 0 0 20px 3px rgba(153, 153, 153, 1);
+		box-shadow: 0 0 20px 3px rgba(153, 153, 153, 1);
+	}
+
+	#side-bar {
+		display: block;
+		position: fixed;
+		top: 0;
+		left: -25em;
+		width: 17em;
+		height: 100%;
+		background-color: rgb(184, 134, 134);
+		overflow-y: auto;
+		z-index: 10;
+		padding: 1em 1em 0;
+		-webkit-transition: left .5s ease-in-out .1s;
+		-o-transition: left .5s ease-in-out .1s;
+		transition: left .5s ease-in-out .1s;
+	}
+
+	#side-bar::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		width: 0;
+		height: 100%;
+		background-color: rgba(0, 0, 0, .2);
+	}
+
+	#side-bar:target {
+		left: 0;
+	}
+
+	#side-bar:target .close-menu {
+		display: block;
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background: rgba(0, 0, 0, .3) 1px 1px repeat;
+		z-index: -1;
+	}
+}
+
+/* CONTENT */
+#main-content {
+	margin: 0 2em 0 2em;
+	padding: 1em;
+	position: relative;
+}
+
+/* ACTUALLY HIDE HIDDEN TAGS */
+#main-content .page-tags a[href^='/system:page-tags/tag/_'] {
+	display: none;
+}
+
+#breadcrumbs {
+	margin: -1em 0 1em;
+}
+
+.pseudocrumbs {
+	margin: -1em 0 1em;
+}
+
+/* YUI-TABS */
+.yui-navset .yui-content {
+	background-color: #f5f5f5;
+}
+
+.yui-navset .yui-nav a,
+.yui-navset .yui-navset-top .yui-nav a {
+	background-color: #d8d8d8;
+	background-image: url('https://d3g0gp89917ko0.cloudfront.net/v--3b8418686296/common--theme/shiny/images/yuitabs.png');
+}
+
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav .selected a:focus, /* no focus effect for selected */
+.yui-navset .yui-nav .selected a:hover { /* no hover effect for selected */
+	background: #700 url('https://d3g0gp89917ko0.cloudfront.net/v--3b8418686296/common--theme/shiny/images/yuitabs.png') repeat-x left -1400px; /* selected tab background */
+	color: #fff;
+}
+
+.yui-navset .yui-nav a:hover,
+.yui-navset .yui-nav a:focus {
+	background: #d88 url('https://d3g0gp89917ko0.cloudfront.net/v--3b8418686296/common--theme/shiny/images/yuitabs.png') repeat-x left -1300px;
+	text-decoration: none;
+}
+
+.yui-navset .yui-nav,
+.yui-navset .yui-navset-top .yui-nav {
+	border-color: #444;
+}
+
+.yui-navset li {
+	line-height: normal;
+}
+
+/* FOOTER */
+#footer {
+	clear: both;
+	font-size: 77%;
+	background: #444;
+	color: #bbb;
+	margin-top: 15px;
+	padding: 3px 10px;
+}
+
+#footer .options {
+	visibility: visible;
+	display: block;
+	float: right;
+	width: 50%;
+	font-size: 100%;
+	text-align: right;
+}
+
+#footer a {
+	color: #fff;
+	background: transparent;
+}
+
+/* SOME NICE BOXES */
+div.sexy-box {
+	background: #eee;
+	border: 1px solid #ccc;
+	padding: 0 10px 12px;
+	margin: 7px 4px 12px;
+	overflow: hidden;
+}
+
+div.sexy-box div.image-container img {
+	margin: 5px;
+	padding: 2px;
+	border: 1px solid #999;
+}
+
+/* Custom page content classes */
+#page-content {
+	min-height: 720px;
+}
+
+.unmargined > p {
+	margin: 0;
+	line-height: 100%;
+}
+
+.content-panel {
+	border: solid 1px #888880;
+	border-radius: 10px;
+	background-color: #999990;
+	margin: 10px 0 15px;
+	box-shadow: 3px 3px 6px #bbb;
+	box-shadow:
+		0 2px 6px rgba(0, 0, 0, .5),
+		inset 0 1px rgba(255, 255, 255, .3),
+		inset 0 10px rgba(255, 255, 255, .2),
+		inset 0 10px 20px rgba(255, 255, 255, .25),
+		inset 0 -15px 30px rgba(0, 0, 0, .1);
+}
+
+.content-panel.standalone {
+	background: #fcfdfb;
+}
+
+.content-panel.series {
+	padding: 0 20px;
+	margin-bottom: 20px;
+}
+
+.content-panel.centered {
+	text-align: center;
+}
+
+.content-panel.left-column {
+	float: left;
+	width: 48%;
+}
+
+.content-panel.right-column {
+	float: right;
+	width: 48%;
+}
+
+.content-panel .panel-heading {
+	padding: 2px 10px;
+	color: #fff;
+	font-size: 90%;
+	font-weight: bold;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, .35);
+}
+
+.content-panel .panel-heading > p,
+.content-panel .panel-footer > p {
+	margin: 0;
+}
+
+.content-panel .panel-body {
+	padding: 5px 10px;
+	background: #fff9f0 url('https://scp-wiki.wdfiles.com/local--files/component:theme/panel-bg-gradient-reverse.png') bottom repeat-x;
+}
+
+.content-panel .panel-footer {
+	padding: 1px 10px;
+	color: #fffff0;
+	font-size: 80%;
+	font-weight: bold;
+	text-align: right;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
+}
+
+.content-panel .panel-footer a {
+	color: #fff;
+}
+
+.content-panel .content-toc {
+	float: right;
+	padding: 0 20px;
+	background-color: #fff;
+	border: solid 1px #ccc;
+	border-radius: 10px;
+	margin: 20px 0 5px 5px;
+	white-space: nowrap;
+	box-shadow: inset 1px 2px 6px rgba(0, 0, 0, .15);
+}
+
+.alternate:nth-child(even) {
+	background-color: rgba(255, 255, 255, .9);
+}
+
+/* Page Rating Module Customizations */
+.page-rate-widget-box {
+	display: inline-block;
+	border-radius: 5px;
+	box-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
+	margin-bottom: 10px;
+	margin-right: 2em;
+}
+
+/* Has increased specificity to override action-area rate's stylesheet */
+div.page-rate-widget-box .rate-points {
+	background-color: #633;
+	border: solid 1px #633;
+	border-right: 0;
+	border-radius: 5px 0 0 5px;
+}
+
+.page-rate-widget-box .rateup,
+.page-rate-widget-box .ratedown {
+	background-color: #fff6f0;
+	border-top: solid 1px #633;
+	border-bottom: solid 1px #633;
+	font-weight: bold;
+}
+
+.page-rate-widget-box .rateup a,
+.page-rate-widget-box .ratedown a {
+	background: transparent;
+	color: #633;
+	padding: 0 4px;
+	margin: 0 1px;
+}
+
+.page-rate-widget-box .rateup a:hover,
+.page-rate-widget-box .ratedown a:hover {
+	background: #633;
+	color: #fffff0;
+	text-decoration: none;
+}
+
+.page-rate-widget-box .cancel {
+	background-color: #633;
+	border: solid 1px #633;
+	border-left: 0;
+	border-radius: 0 5px 5px 0;
+}
+
+.page-rate-widget-box .cancel a {
+	background: transparent;
+	text-transform: uppercase;
+	color: #966;
+}
+
+.page-rate-widget-box .cancel a:hover {
+	border-radius: 0 3px 3px 0;
+	background: #633;
+	color: #fffff0;
+	text-decoration: none;
+}
+
+/* Fixes for multi-line page tags */
+#main-content .page-tags {
+	margin: 1em 0 0;
+	padding: 0;
+}
+
+#main-content .page-tags span {
+	display: inline-block;
+	padding: 0;
+	max-width: 60%;
+}
+
+#main-content .page-tags a {
+	display: inline-block;
+	white-space: nowrap;
+}
+
+/* Standard Image Block */
+.scp-image-block {
+	border: solid 1px #666;
+	box-shadow: 0 1px 6px rgba(0, 0, 0, .25);
+	width: 300px;
+}
+
+.scp-image-block.block-right {
+	float: right;
+	clear: right;
+	margin: 0 2em 1em;
+}
+
+.scp-image-block.block-left {
+	float: left;
+	clear: left;
+	margin: 0 2em 1em 0;
+}
+
+.scp-image-block.block-center {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.scp-image-block img {
+	border: 0;
+	width: 300px;
+}
+
+.scp-image-block .scp-image-caption {
+	background-color: #eee;
+	border-top: solid 1px #666;
+	padding: 2px 0;
+	font-size: 80%;
+	font-weight: bold;
+	text-align: center;
+	width: 300px;
+}
+
+.scp-image-block > p {
+	margin: 0;
+}
+
+.scp-image-block .scp-image-caption > p {
+	margin: 0;
+	padding: 0 10px;
+}
+
+/* Collapsible Link */
+#page-content a.collapsible-block-link {
+	overflow-wrap: anywhere;
+}
+
+/* Wikiwalk Navigation */
+.footer-wikiwalk-nav {
+	font-weight: bold;
+	font-size: 75%;
+}
+
+/* Licensebox */
+.licensebox .collapsible-block-link {
+	margin-left: .25em;
+	padding: .25em;
+	font-weight: bold;
+	opacity: .5;
+	color: inherit;
+	-webkit-transition: opacity .5s ease-in-out;
+	-moz-transition: opacity .5s ease-in-out;
+	transition: opacity .5s ease-in-out;
+}
+
+.licensebox .collapsible-block-link:hover,
+.licensebox .collapsible-block-link:active {
+	opacity: 1;
+}
+
+/* Forum Customizations */
+.forum-thread-box .description-block {
+	padding: .5em 1em;
+	border-radius: 10px;
+	box-shadow:
+		0 1px 5px rgba(0, 0, 0, .15),
+		inset 0 1px 0 rgba(255, 255, 255, .8),
+		inset 0 10px 5px rgba(255, 255, 255, .25),
+		inset 0 -15px 30px rgba(0, 0, 0, .1);
+}
+
+.thread-container .post .head {
+	padding: .5em 1em;
+	background-color: #eee;
+	background-image: linear-gradient(to right, #eee, #eeecec);
+	box-shadow: inset 2px 3px 6px rgba(0, 0, 0, .15);
+	border-radius: 5px 5px 0 0;
+}
+
+/* Adding Forum Lines */
+.post-container .post-container {
+	border-left: 2px solid rgba(0, 0, 0, .25);
+	padding-left: .75rem;
+}
+
+/* Hide Forum Signatures */
+.signature {
+	display: none !important;
+}
+
+/* Hide Avatar Hover */
+#avatar-hover-container {
+	display: none;
+}
+
+/* Ruby by Nanimono Demonai */
+.ruby, ruby {
+	display: inline-table;
+	text-align: center;
+	white-space: nowrap;
+	line-height: 1;
+	height: 1em;
+	vertical-align: text-bottom;
+}
+
+.rt, rt {
+	display: table-header-group;
+	font-size: .6em;
+	line-height: 1.1;
+	text-align: center;
+	white-space: nowrap;
+}
+
+/* Keycap */
+.keycap {
+	border: 1px solid;
+	border-color: #ddd #bbb #bbb #ddd;
+	border-bottom-width: 2px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	background-color: #f9f9f9;
+	padding: 1px 3px;
+	font-family: inherit;
+	font-size: .85em;
+	white-space: nowrap;
+}
+
+/* tag style */
+.tags {
+	display: inline-block;
+	margin: 0 0 0 5px;
+	padding: 3px 5px 3px 0;
+	height: 13px;
+	line-height: 13px;
+	font-size: 11px;
+	background: #666;
+	color: #fff;
+	text-decoration: none;
+	-moz-border-radius-bottomright: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	-moz-border-radius-topright: 4px;
+	-webkit-border-top-right-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
+.tags::before {
+	content: '';
+	padding: 0 1px 3px;
+	float: left;
+	position: relative;
+	top: -3px;
+	left: -10px;
+	width: 0;
+	height: 0;
+	border-color: transparent #666 transparent transparent;
+	border-style: solid;
+	border-width: 8px 8px 8px 0;
+}
+
+.tags::after {
+	content: '';
+	position: relative;
+	top: 4.5px;
+	left: -8px;
+	float: left;
+	width: 4px;
+	height: 4px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	background: #fff;
+	-moz-box-shadow: -1px -1px 2px #004977;
+	-webkit-box-shadow: -1px -1px 2px #333;
+	box-shadow: -1px -1px 2px #333;
+}
+
+/* Display Black Block by Nanimono Demonai */
+.bblock {
+	color: #000;
+	background-color: #000;
+	transition: 2s;
+	text-decoration: none;
+}
+
+.bblock:hover {
+	background-color: #000;
+	color: #060;
+	text-decoration: none;
+}
+
+.dblock {
+	color: #000;
+	background-color: #000;
+	transition: 2s;
+	text-decoration: none;
+}
+
+.dblock:hover {
+	background-color: transparent;
+	text-decoration: none;
+}
+
+/* Blockquote Mimic Div */
+div.blockquote {
+	border: 1px dashed #999;
+	background-color: #f4f4f4;
+	padding: 0 1em;
+	margin: 1em 3em;
+}
+
+div.curved {
+	border-radius: 10px;
+	margin: 1em 3em;
+}
+
+@media (max-width: 479px) {
+	blockquote,
+	div.blockquote,
+	div.curved {
+		margin: 1em 0;
+	}
+}
+
+@media (min-width: 480px) and (max-width: 580px) {
+	blockquote,
+	div.blockquote,
+	div.curved {
+		margin: .5em;
+	}
+}
+
+/* Fix revision list */
+.changes-list-item td.title {
+	min-width: 40%;
+}
+
+.changes-list-item .flags {
+	text-align: center;
+	width: 2em;
+}
+
+.changes-list-item .mod-date {
+	text-align: center;
+}
+
+.changes-list-item .mod-by {
+	width: 10em;
+}
+
+@media (max-width: 435px) {
+	.changes-list-item .revision-no {
+		display: none;
+	}
+}
+
+/*
+    2011-11-13 Minobe Hiroyuki @ Marguerite Site
+    www.marguerite.jp/Nihongo/WWW/CSSTips/EmphasizeDots-CSS3.html
+    Edited for the SCP Foundation by Nanimono_Demonai
+*/
+
+.emph {
+	text-emphasis-style: dot;
+	-webkit-text-emphasis-style: dot;
+}
+
+
+/* webkit scrollbar */
+::-webkit-scrollbar {
+	width: 9px; /* for vertical scrollbars */
+	height: 9px; /* for horizontal scrollbars */
+	border: solid 1px rgba(0, 0, 0, .1);
+}
+
+::-webkit-scrollbar-track {
+	background: rgba(0, 0, 0, .1);
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgba(50, 50, 50, .3);
+}
+
+.page-source {
+	word-break: break-all;
+}
+
+/* Responsive Web Design */
+img, embed, video, object, iframe, table {
+	max-width: 100%;
+}
+
+#page-content div, #page-content div table {
+	max-width: 100%;
+}
+
+#edit-page-comments {
+	width: 100%;
+}
+
+@media (max-width: 767px) {
+	#main-content {
+		max-width: 90%;
+		margin: 0 5%;
+		padding: 0;
+		-webkit-transition: .5s ease-in-out .1s;
+		-o-transition: .5s ease-in-out .1s;
+		transition: .5s ease-in-out .1s;
+	}
+
+	span, a {
+		overflow-wrap: break-word;
+	}
+
+	.page-history tbody tr td:last-child {
+		width: 35%;
+	}
+
+	td.name {
+		width: 15em;
+	}
+
+	.yui-navset {
+		z-index: 1;
+	}
+
+	#navi-bar, #navi-bar-shadow {
+		display: none;
+	}
+
+	.page-options-bottom a {
+		padding: 0 5px;
+	}
+
+	.license-area {
+		font-size: .9em;
+	}
+
+	/* owindow */
+	.owindow {
+		min-width: 80%;
+		max-width: 99%;
+	}
+
+	.modal-body .table, .modal-body .table ~ div {
+		float: left;
+	}
+
+	.owindow .button-bar {
+		float: right;
+	}
+
+	.owindow div a.btn-primary {
+		width: 100%;
+		float: left;
+	}
+
+	.owindow div .btn-primary ~ div {
+		width: 100%;
+	}
+
+	/* header area and top bar */
+	#header {
+		max-width: 90%;
+		background-size: calc(48px + 5%);
+		background-position: 8px 64%;
+	}
+
+	#header h1, #header h2 {
+		margin-left: calc(48px + 8%);
+	}
+
+	#header h1 a {
+		font-size: calc(75% + 2vw);
+	}
+
+	#search-top-box-input {
+		width: 7em;
+	}
+
+	.top-bar {
+		display: none;
+	}
+
+	.mobile-top-bar {
+		display: block;
+	}
+
+	.mobile-top-bar ul li:last-of-type ul {
+		right: 0;
+	}
+}
+
+@media (max-width: 479px) {
+	#search-top-box-input {
+		display: none;
+	}
+
+	#page-content {
+		font-size: .9em;
+	}
+
+	#recent-posts-category {
+		width: 100%;
+	}
+
+	.page-options-bottom a {
+		padding: 0 4px;
+	}
+
+	.license-area {
+		font-size: .8em;
+	}
+
+	table.form td, table.form th {
+		float: left;
+		padding: 0;
+	}
+
+	#edit-page-title {
+		max-width: 90%;
+	}
+
+	.content-panel.left-column, .content-panel.right-column {
+		width: 99%;
+		float: left;
+	}
+
+	#page-content div, #page-content div table {
+		clear: both;
+	}
+
+	#page-content div.title {
+		word-break: keep-all;
+	}
+}
+
+div.scpnet-interwiki-wrapper {
+	margin: 0 -5px;
+}
+
+iframe.scpnet-interwiki-frame {
+	height: 0;
+	border: none;
+}
+
+/* Content Warning for adult content */
+div#u-adult-warning {
+	width: fit-content;
+	margin: 0 auto 20px;
+	padding: .5rem 1rem;
+	border: 3px solid #333;
+	background: #e4e4e4;
+	color: #333;
+	text-align: center;
+	font-weight: bold;
+}
+
+div#u-adult-warning > div#u-adult-header {
+	font-size: 300%;
+	text-shadow: 1px 2px 3px rgba(0, 0, 0, .5);
+	color: #901;
+}
+
+div#u-adult-warning > div#u-adult-header p {
+	margin: 0;
+}
+
+div#u-adult-warning > .error-block {
+	color: unset;
+	padding: unset;
+	margin: unset;
+	border: unset;
+	margin-bottom: 1em;
+}
+
+/* Page preview component -- https://scp-wiki.wikidot.com/component:preview */
+div.preview {
+	display: none;
+}
+</style><script>window.nitroAds=window.nitroAds||{createAd:function(){window.nitroAds.queue.push(["createAd",arguments])},addUserToken:function(){window.nitroAds.queue.push(["addUserToken",arguments])},queue:[]};</script>
+
+
+
+
+
+<div id="skrollr-body">
+<a name="page-top"></a>
+
+
+
+
+
+<div id="container-wrap-wrap">
+    <div id="container-wrap">
+        <div id="container">
+            <div id="header" style="animation: 0s ease 0s 1 normal none running none;">
+              <h1><a href="https://scp-wiki.wikidot.com/"><span>Not The SCP Foundation</span></a></h1>
+                
+                    <h2><span>Secure, Contain, Protect</span></h2>
+                
+                
+                
+                
+                
+                
+                
+                    
+                
+                
+                <div id="header-extra-div-2"><span></span></div><div id="header-extra-div-3"><span></span></div>
+            </div>
+            
+            <div id="content-wrap">
+                
+                    
+                
+                
+                <!-- google_ad_section_end -->
+                
+                <div id="main-content">
+                    <div id="action-area-top"></div>
+                    
+                    
+                        <div id="page-title">
+                            SCP-6016
+                        </div>
+                    
+
+                    
+
+                    
+
+
+
+                    <div id="page-content">
+                        
+
+
+
+
+
+
+<div class="anom-bar-container item-6016 clear-4 euclid none keneq warning {$american}">
+<div class="anom-bar">
+<div class="top-box">
+<div class="top-left-box"><span class="item">Item#:</span> <span class="number">24156</span></div>
+<div class="top-center-box">
+<div class="bar-one"></div>
+<div class="bar-two"></div>
+<div class="bar-three"></div>
+<div class="bar-four"></div>
+<div class="bar-five"></div>
+<div class="bar-six"></div>
+</div>
+<div class="top-right-box">
+<div class="level">Level4</div>
+<div class="clearance"></div>
+</div>
+</div>
+<div class="bottom-box">
+<div class="text-part">
+<div class="main-class">
+<div class="contain-class">
+<div class="class-category">Containment Class:</div>
+<div class="class-text">euclid</div>
+</div>
+<div class="second-class">
+<div class="class-category">Secondary Class:</div>
+<div class="class-text">none</div>
+</div>
+</div>
+<div class="disrupt-class">
+<div class="class-category">Disruption Class:</div>
+<div class="class-text">keneq</div>
+</div>
+<div class="risk-class">
+<div class="class-category">Risk Class:</div>
+<div class="class-text">warning </div>
+</div>
+</div>
+<div class="diamond-part">
+<div class="danger-diamond"><a href="https://scp-wiki.wikidot.com/classification-committee-memo">link to memo</a><br>
+<div class="arrows"></div>
+<div class="octagon"></div>
+<div class="quadrants">
+<div class="top-quad"></div>
+<div class="right-quad"></div>
+<div class="left-quad"></div>
+<div class="bottom-quad"></div>
+</div>
+<div class="top-icon"></div>
+<div class="right-icon"></div>
+<div class="left-icon"></div>
+<div class="bottom-icon"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<p><strong>Special Containment Procedures:</strong>SCP-24156 is to be contained on an air gapped computer system in a standard containment vault. Anomalous intances of SCP-24156 are to be deleted from external databases, and all recent accessors of SCP-24156's vault are to be questioned for their use of the system.</p>
+<p><strong>Description:</strong> SCP-24156 is a series of anomalous images, files in the graphics interchange format, and videos; of a spinning minecraft fox. SCP-24156 is occasionally accomponied by a highly compressed version of the song "Funky Town" by "Lips, Inc.", or an equivalant cover. </p><p></p><p>Person(s) exposed to SCP-24156 are extremly entranced with the instance. In some circumstances person(s) exposed to SCP-24156 will feel an intense sensation of humour and dispair, these effects have been observed to persist for a maximum duration of 2 hours. During the period they (persons exposed) may also feel strongly compelled to spread instanced of SCP-24156 to others.</p><p></p>
+
+<p>Initial reports of SCP-24156 were located by an agent on the Digital platorm Discord on ██-██-████. (See Addendum-24156-A) SCP-24156 was given disruption class VLAM, as it was belived to be unable to act as risk to people beyond the confines of Discord, it was reclassified on 02-10-2022, due to reports that it had expanded to the Youtube plaform, thus increasing its reach. (See Addendum-24156-B) Additional sightings of SCP-24156 have been seen across multiple platforms, including the video game Minecraft. (See Addendum-24156-C)</p><p><strong>Addendum-24156-A:</strong></p>
+
+<p>The following is a chat log archived by Agent ██████████, on ██-██-████,It contains the inital content that prompted them to alert The Foundation of SCP-24156.</p><div class="blockquote">
+<p style="text-align: center;"><strong>&lt;BEGIN LOG&gt;</strong></p>
+
+<p><strong>Note: </strong>All images attached in this log are instances of SCP-24156</p><hr>
+<p>14:54 <strong>Lion8Cake: 
+</strong>Xof cult</p>
+
+
+
+
+
+<p>14:54 <strong>Min3Mast3r
+</strong>*Reacted with a xof emoji*</p><p>14:54 <strong>Supranicus
+</strong>*Reacted with a xof emoji*</p><p>14:54 <strong>XMbosse
+</strong>*Reacted with a xof emoji*</p><p>14:55 <strong>Min3Mast3r 
+</strong>*Attached an image*</p><p>14:55 <strong>XMbosse
+</strong>*Attached an image</p><p></p><p>14:55 <strong>Supranicus 
+</strong>*Attached an image*</p><p>14:55 <strong>Min3Mast3r 
+</strong>*Attached an image*</p><p>14:55 <strong>Min3Mast3r 
+</strong>*Attached an image*</p><p>14:56 <strong>XMbosse
+</strong>*Attached an image*</p><p>14:56 <strong>Steve_Poland
+</strong>*Attached an image*</p><p>14:56 <strong>Steve_Poland
+</strong>*Attached an image*</p><p>14:56 <strong>Steve_Poland
+</strong>*Attached an image*</p><p></p><p>14:56 <strong>XMbosse
+</strong>*Attached an image*</p><p>14:57 <strong>Steve_Poland
+</strong>*Attached an image*</p><p></p><p>14:57 <strong>Supranicus
+</strong>*Attached an image*</p><p>14:57 <strong>Lion8Cake
+</strong>*Attached an image*</p><p>14:57 <strong>Min3Mast3r
+</strong>*Attached an image*</p><p></p><hr>
+<p></p><p style="text-align: center;"><strong>&lt;END LOG&gt;</strong></p>
+<p></p>
+</div>
+<p>Over the successive 1 hour and 34 minute period, an aditional 7 persons facilitated in the creation of instances of SCP-24156. A total of 234 instances of SCP-24156 were created.</p><br>
+<div class="scp-image-block block-left" style="width:20%;"><img src="https://cdn.discordapp.com/attachments/614902352754769940/1040857689665851472/image.png" style="width:100%;" alt="Xof Video" class="image">
+<div class="scp-image-caption" style="width:300px;">
+<p>An Instance SCP-24156 (Fig A.)</p>
+</div>
+</div>
+<div class="scp-image-block block-left" style="width:20%;"><img src="https://cdn.discordapp.com/attachments/614902352754769940/1040884124166131722/image.png" style="width:100%;" alt="Xof Video" class="image">
+<div class="scp-image-caption" style="width:300px;">
+<p>An Instance SCP-24156 (Fig B.)</p>
+</div>
+</div><p><strong>Addendum-24156-B:</strong></p><p>The attached image (Fig A.) is a screen capture of a video titled "fox" an instance of SCP-24156 which was avalible to the general public until 02-10-2022, when the Foundation increased the disruption class, and moved to contain SCP-24156. The attached image (Fig A.) has been altered in order to prevent the effects of SCP-24156 (outlined in the description,) from spreading.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+<br><p><strong>Addendum-24156-C:</strong></p><p>The attached image (Fig B.) is a screenshot from the video game 'Minecraft' in which an instance of SCP-24156 has been created on a public server. This instance was located by Agent ███████████ after leaving the intended bounds of the servers world. This specific instance of SCP-24156 is located in an area that appears to resemble a room from SCP-█████ (also known as ███ █████████) but has been tested to not be an instance of SCP-█████ due to its conventional geometry. (Further details can be found in the file of SCP-█████.)</p><p><span style="white-space: pre-wrap;"> </span></p>
+
+
+
+<div class="footnotes-footer">
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<div class="footer-wikiwalk-nav">
+<div style="text-align: center;">
+
+</div>
+</div>
+<div class="licensebox">
+<div class="collapsible-block">
+<div class="collapsible-block-folded" style="display: none;"><a class="collapsible-block-link" href="javascript:;">‡&nbsp;Licensing&nbsp;/&nbsp;Citation</a></div>
+
+</div>
+</div>
+
+                    </div>
+
+                            
+            <!-- wikidot_bottom_300x250 -->
+
+        
+    
+
+                    
+
+
+
+                    
+                        
+                    
+
+                    <div id="page-info-break"></div>
+                    
+                        
+                    
+                    <div id="action-area" style="display: none;"></div>
+                </div>
+            </div>
+            
+            
+            
+            
+            
+                <div id="license-area" class="license-area">
+                    Unless otherwise stated, the content of this page is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 License</a>
+                </div>
+            
+            
+            
+
+
+
+            <div id="extrac-div-1"><span></span></div><div id="extrac-div-2"><span></span></div><div id="extrac-div-3"><span></span></div>
+            
+            
+            
+            
+                
+
+            
+        </div>
+        
+    </div>
+<!-- These extra divs/spans may be used as catch-alls to add extra imagery. -->
+<div id="extra-div-1"><span></span></div><div id="extra-div-2"><span></span></div><div id="extra-div-3"><span></span></div>
+<div id="extra-div-4"><span></span></div><div id="extra-div-5"><span></span></div><div id="extra-div-6"><span></span></div>
+</div>
+
+
+
+
+</div>
+
+
+
+
+<div id="page-options-bottom-tips" style="display: none;">
+    
+</div>
+<div id="page-options-bottom-2-tips" style="display: none;">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+            
+        
+        
+        
+        
+    </div>
+
+<div id="odialog-hovertips" style="position: absolute; z-index: 100; top: 0px; width: 100%;"><div id="edit-button-hovertip" class="hovertip " style="position: absolute; display: none; border: 1px solid black;"><div class="content">
+        Click here to edit contents of this page.    </div></div><div id="edit-sections-button-hovertip" class="hovertip " style="position: absolute; display: none; border: 1px solid black;"><div class="content">
+        Click here to toggle editing of individual sections of the page (if possible).         Watch headings for an "edit" link when available.    </div></div><div id="edit-append-button-hovertip" class="hovertip " style="position: absolute; display: none; border: 1px solid black;"><div class="content">
+        Append content without editing the whole page source.    </div></div><div id="history-button-hovertip" class="hovertip " style="position: absolute; display: none; border: 1px solid black;"><div class="content">
+        Check out how this page has evolved in the past.    </div></div><div id="discuss-button-hovertip" class="hovertip " style="position: absolute; display: none; border: 1px solid black;"><div class="content">
+        If you want to discuss contents of this page - this is the easiest way to do it.    </div></div><div id="files-button-hovertip" class="hovertip " style="position: absolute; display: none; border: 1px solid black;"><div class="content">
+        View and manage file attachments for this page.    </div></div><div id="site-tools-button-hovertip" class="hovertip " style="position: absolute; display: none; border: 1px solid black; left: 1057px; top: 5014px;"><div class="content">
+        A few useful tools to manage this Site.    </div></div><div id="backlinks-button-hovertip" class="hovertip " style="position: absolute; display: none; border: 1px solid black;"><div class="content">
+        See pages that link to and include this page.    </div></div><div id="rename-move-button-hovertip" class="hovertip " style="position: absolute; display: none; border: 1px solid black;"><div class="content">
+        Change the name (also URL address, possibly the category) of the page.    </div></div><div id="view-source-button-hovertip" class="hovertip " style="position: absolute; display: none; border: 1px solid black;"><div class="content">
+        View wiki source for this page without editing.    </div></div><div id="parent-page-button-hovertip" class="hovertip " style="position: absolute; display: none; border: 1px solid black;"><div class="content">  
+        View/set parent page (used for creating breadcrumbs and structured layout).    </div></div><div id="abuse-report-button-hovertip" class="hovertip " style="position: absolute; display: none; border: 1px solid black;"><div class="content">
+            Notify administrators if there is objectionable content in this page.        </div></div><div id="bug-report-button-hovertip" class="hovertip " style="position: absolute; display: none; border: 1px solid black;"><div class="content">
+            Something does not work as expected? Find out what you can do.        </div></div><div id="wikidot-help-button-hovertip" class="hovertip " style="position: absolute; display: none; border: 1px solid black;"><div class="content">
+            General Wikidot.com documentation and help section.        </div></div><div id="wikidot-tos-button-hovertip" class="hovertip " style="position: absolute; display: none; border: 1px solid black;"><div class="content">
+            Wikidot.com Terms of Service - what you can, what you should not etc.        </div></div><div id="wikidot-privacy-button-hovertip" class="hovertip " style="position: absolute; display: none; border: 1px solid black;"><div class="content">
+            Wikidot.com Privacy Policy.          
+        </div></div><div class="hovertip " style="width: auto; background-color: white; position: absolute; display: none; border: 1px solid black;"><div class="content"><div class="footnote"><div class="f-heading">Footnote 1.</div><div class="f-content"><a href="https://scp-wiki.wikidot.com/goc-supplemental-thaumatology">Elan-Vital-Energy</a>, radiation that is closely tied to thaumaturgy and sometimes other paranormal activities. The measurement was adapted from the Global Occult Coalition.</div><div class="f-footer">(click to scroll to footnotes)</div></div></div></div><div class="hovertip " style="width: auto; background-color: white; position: absolute; display: none; border: 1px solid black; left: 652.5px; top: 567px;"><div class="content"><div class="footnote"><div class="f-heading">Footnote 2.</div><div class="f-content">This is theorized to be a thaumaturgic backlash to the first effect</div><div class="f-footer">(click to scroll to footnotes)</div></div></div></div><div class="hovertip " style="width: auto; background-color: white; position: absolute; display: none; border: 1px solid black;"><div class="content"><div class="footnote"><div class="f-heading">Footnote 3.</div><div class="f-content">A mutation allowing the carrier to work magic. The term was adapted from the Global Occult Coalition.</div><div class="f-footer">(click to scroll to footnotes)</div></div></div></div><div class="hovertip " style="width: auto; background-color: white; position: absolute; display: none; border: 1px solid black;"><div class="content"><div class="footnote"><div class="f-heading">Footnote 4.</div><div class="f-content">At the time of memory creation</div><div class="f-footer">(click to scroll to footnotes)</div></div></div></div><div class="hovertip " style="width: auto; background-color: white; position: absolute; display: none; border: 1px solid black;"><div class="content"><div class="footnote"><div class="f-heading">Footnote 5.</div><div class="f-content">Extinct irregular organism that is related to the zebra but has a cognitohazardous fur pattern.</div><div class="f-footer">(click to scroll to footnotes)</div></div></div></div><div class="hovertip " style="width: auto; background-color: white; position: absolute; display: none; border: 1px solid black;"><div class="content"><div class="footnote"><div class="f-heading">Footnote 6.</div><div class="f-content">Irregular organism that is descended from the narwhal and has developed equine-like features.</div><div class="f-footer">(click to scroll to footnotes)</div></div></div></div><div class="hovertip " style="width: auto; background-color: white; position: absolute; display: none; border: 1px solid black;"><div class="content"><div class="footnote"><div class="f-heading">Footnote 7.</div><div class="f-content">Irregular organism that resembles a maggot but is undetectable through its <a href="https://scp-wiki.wikidot.com/antimemetics-division-hub">antimemetic</a> effect. Present-day instances are docile.</div><div class="f-footer">(click to scroll to footnotes)</div></div></div></div><div class="hovertip " style="width: auto; background-color: white; position: absolute; display: none; border: 1px solid black;"><div class="content"><div class="footnote"><div class="f-heading">Footnote 8.</div><div class="f-content">Drugs that aid in memory-retrieval.</div><div class="f-footer">(click to scroll to footnotes)</div></div></div></div><div class="hovertip " style="width: auto; background-color: white; position: absolute; display: none; border: 1px solid black;"><div class="content"><div class="footnote"><div class="f-heading">Footnote 9.</div><div class="f-content">Coincides with the first recorded downfall of the Daevite Empire, which has since been made <a href="https://scp-wiki.wikidot.com/scp-2515">obsolete</a>.</div><div class="f-footer">(click to scroll to footnotes)</div></div></div></div><div class="hovertip " style="width: auto; background-color: white; position: absolute; display: none; border: 1px solid black;"><div class="content"><div class="footnote"><div class="f-heading">Footnote 10.</div><div class="f-content">Concerning the manipulation of flesh. Relation to thaumaturgy is as of yet unknown</div><div class="f-footer">(click to scroll to footnotes)</div></div></div></div></div></body></html>
